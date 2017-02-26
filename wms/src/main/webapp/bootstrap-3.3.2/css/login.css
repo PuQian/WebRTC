@@ -1,0 +1,56 @@
+/*
+------------------------------- 
+Site:        Ê×Ò³
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+
+
+/*=======µÇÂ¼=======*/
+.login_box{width:1020px; height:500px; margin:50px auto 0;}
+.login_banner{width:640px; height:390px; float:left; }
+
+.login_form{width:360px; height:380px; float:right; background:#fff; border:1px solid #e2e2e2;}
+.login_form h2{margin:40px auto 25px;font-size:20px; text-align:center;}
+.login_form p{width:275px; margin:0 auto 10px; font-size:14px; color:#999;}
+.login_form .p_id,
+.login_form .p_pw{width:270px; height:35px; padding:0;  overflow:hidden; background:#fff url(/images/login_icon.png) no-repeat; border:1px solid #ccc; border-radius:1px;}
+.login_form .p_pw{background-position:0 -32px;}
+.login_form .input_id,
+.login_form .input_pw{width:235px; height:32px; margin-left:32px;float:left; border:0; font-size:16px; line-height:32x;}
+
+
+.login_form .p_text{padding:8px 0;}
+.login_form .miss_pw{float:right;}
+.login_form .btn_login{width:275px; height:35px; background:#00c7e4; border:0; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:18px; line-height:35px; color:#fff; }
+/*=======µÇÂ¼end=======*/
+
+
+
+/*=======×¢²á =======*/
+.register_box{width:1020px; height:660px; margin:30px auto 30px;overflow:hidden; background:#fff; border:1px solid #e2e2e2;}
+.register_title{width:880px; height:75px; margin:40px auto 50px; display:block; overflow:hidden; background:url(/images/register_h2.png) repeat-x bottom;}
+.register_title h2{margin-left:5px;  font-size:28px; color:#333; line-height:35px; text-align:center; font-weight:100;}
+
+/*------×ó ±íµ¥-----*/
+.register_form{width:650px; height:420px;  float:left; border-right:1px dashed #ddd;}
+.register_form td{padding:5px; font-size:16px; color:#666;}
+.register_form .input_txt{height:35px; padding:0 5px; border-radius:6px; font-size:16px; line-height:35px;}
+.register_form .btn_phone_num{width:90px; height:35px; margin-left:10px;border:1px solid #00c7e4; background:#d8f9fe; -moz-border-radius: 4px; -webkit-border-radius: 4px;  border-radius:4px; font-size:14px; line-height:30px; color:#00c7e4; cursor:pointer;}
+.register_form .input_code{width:90px; height:0px; float:right;}
+.register_form .input_btn{width:260px; height:40px; background:#00c7e4; border:0; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:18px; line-height:35px; color:#fff;}
+/*------×ó ±íµ¥ end-----*/
+
+
+/*------ÓÒ-----*/
+.register_text{width:250px; padding-left:50px; float:left;}
+.register_text h3{font-size:16px; color:#666;line-height:40px;}
+
+.register_text .btn_login{width:180px; height:35px; margin:10px 0 30px; display:block;border:1px solid #00c7e4; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:16px; line-height:35px; text-align:center; color:#00c7e4; cursor:pointer;}
+
+.register_text p{font-size:12px;  color:#999;}
+/*------ÓÒ- end----*/
+
+/*=======×¢²á end=======*/
+

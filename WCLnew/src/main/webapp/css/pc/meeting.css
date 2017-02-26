@@ -1,0 +1,115 @@
+/*
+------------------------------- 
+Site:        会议召开界面
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+
+
+body{background:#97a2a7; }
+/*changed by pq*/.meeting_box{width:1100px; height:630px; padding:0; left:410px; top:120px; position:absolute; z-index:150; /*margin:60px auto 0;*/ overflow:hidden; background:#fafafa; -moz-border-radius:6px;   -webkit-border-radius: 6px;  border-radius:6px;
+box-shadow:0 0 18px #79858c;}
+
+
+
+/*=======头部=======*/
+.meeting_head{width:100%; height:65px; overflow:hidden; background:#489fcf;}
+
+ /*-------头部 左 用户信息-------*/
+/*pq*/.meeting_head .user_info{width:820px; float:left; margin:14px 0 0 20px; overflow:hidden;}
+.meeting_head .user_info .portrait{width:40px; height:40px;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%; overflow:hidden; float:left;}
+ .meeting_head .user_info .portrait img{width:40px; height:40px;}
+.meeting_head .user_info .user_name{padding:0 3px 0 10px; float:left; display:inline-block;font-size:18px;line-height:40px; font-weight:100; color:#fff;}/*---�û����--*/
+  /*--------头部 左 用户信息  end------*/
+
+ /*--------头部 右 操作-------*/
+.meeting_head_right{width:250px; margin-top:18px;float:right; }
+.meeting_head_right li{width:35px; height:35px; margin-right:5px; float:right; overflow:hidden; background-image:url(images/meeting_head_icon.png); cursor:pointer; text-indent:-80px;}
+.meeting_head_right .operation_close{margin-right:15px; margin-left:20px;background-position:0 0;}
+.meeting_head_right .operation_video{background-position:0 -35px;}
+.meeting_head_right .operation_audio{background-position:0 -70px;}
+.meeting_head_right .operation_file{background-position:0 -105px;}
+.meeting_head_right .operation_add{background-position:0 -140px;}
+.meeting_head_right .operation_exit{background-position:0 -175px;}
+.meeting_head_right .operation_set{background-position:0 -210px;}
+.meeting_head_right .operation_time{background-position:0 -245px;}
+.meeting_head_right .operation_service{background-position:0 -280px;}
+.meeting_head_right .operation_min{margin-right:15px; margin-left:20px;background-position:0 -315px;}
+ /*--------头部 右 操作 end-------*/  
+
+ /*-----*/
+/*=======头部 end=======*/
+
+
+
+/*=======主体 左======*/
+.meeting_box_l{width:250px; height:630px; float:left; background:#ecf1f3;}
+
+.vedio_me{width:250px; height:165px; overflow:hidden;}
+
+ /*--------左侧 最近通话列表-------*/
+.meeting_member{height:400px; overflow:auto;}
+.meeting_member h2{padding-left:30px;font-size:14px; color:#666; line-height:44px; font-weight:100;}
+.meeting_member li{width:100%; height:44px; cursor:pointer;}
+.meeting_member .list_portrait{width:30px; height:30px; margin:7px 10px 0 30px; float:left; overflow:hidden;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;}
+ .meeting_member .list_portrait img{width:30px; height:30px;}
+ .meeting_member li a{width:115px; height:44px; display:block; float:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:44px; color:#333; font-size:14px;}
+  .meeting_member li .state{width:2em; margin-left:15px; float:left; font-size:12px; color:#999;line-height:44px;}
+ .meeting_member li.on, .meeting_member li:hover{background:#d9dddf;}
+ /*--------左侧 最近通话列表 end -------*/
+
+
+/*=======主体 左end=======*/
+
+
+
+
+/*=======主体 右=======*/
+.meeting_box_r{width:850px; height:630px; float:right; border-top:1px solid #d9e3e7;}
+
+.vedio_box{width:100%; height:420px; overflow:hidden; display:block; text-align:center;}
+ 
+/*=======主体 右 end=======*/
+
+/*=======文字聊天=======*/
+.vedio_dialogue{width:100%;  height:138px;background:#f3f7f9; border-top:1px solid #d9e3e7;}
+
+.vedio_dialogue .dialogue_list{width:580px; height:138px; float:left;overflow:auto;}
+.vedio_dialogue .dialogue_list li{margin:5px 8px 0; padding:5px 0; border:1px solid #fafafa; cursor:pointer;}
+.vedio_dialogue .dialogue_list li h3{padding-left:10px; overflow:hidden; white-space:nowrap;text-overflow:ellipsis;font-size:14px; line-height:26px; font-weight:100; color:#2fc800;}
+.vedio_dialogue .dialogue_list li h3.you_name{color:#4499cc;}
+.vedio_dialogue .dialogue_list li p{margin:0; padding:0 20px; font-size:14px; color:#333; line-height:150%;}
+.vedio_dialogue .dialogue_list li.on{background:#ecf6fb; border:1px solid #c4e1f1;}
+.vedio_dialogue .box_dialogue_date{height:26px; margin:20px 10px 10px;padding-left:10px;border-bottom:1px solid #999; font-size:18px; color:#df1f20;}/*---ʱ��ָ�--*/
+
+/*=======文字聊天end=======*/
+
+/*======编辑对话=======*/
+/*change by pq 区别rtc_chat*/
+.meeting_input_chat_box{width:265px;  display:block; overflow:hidden;float:right;}
+.meeting_input_chat_box .meeting_input_text{width:226px; height:64px; padding:8px; margin:8px auto; display:block; border:1px solid #bad1de; background:#fff; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:14px; line-height:150%;}
+
+.meeting_input_chat_box .meeting_input_chat_edit{width:100%; margin:0 auto; display:block; overflow:hidden;}
+.meeting_input_chat_box .meeting_input_chat_edit_l{width:120px; margin:5px 0 0 2px; float:left;}
+.meeting_input_chat_box .meeting_input_chat_edit_l li{width:24px; height:24px; margin-right:8px; float:left; overflow:hidden; 
+filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity:0.6;background-image:url(images/chat_input_icon.png); text-indent:-90px; cursor:pointer; }
+.meeting_input_chat_edit_l .icon_history{background-position:0 0}
+.meeting_input_chat_edit_l .icon_face{background-position:-24px 0}
+.meeting_input_chat_edit_l .icon_font_size{background-position:-48px 0}
+.meeting_input_chat_edit_l .icon_color{background-position:-72px 0}
+.meeting_input_chat_box .meeting_input_chat_edit_l li:hover{filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity:1;}
+	
+.meeting_input_chat_box .meeting_input_chat_edit_r{width:92px; float:right;}
+.meeting_input_chat_edit_r .send_out{width:80px; height:30px;   }
+.btn_blue{height:30px; display:block;border:1px solid #bad1de; background:#ecf6fb; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:14px; line-height:30px; color:#3383c1; cursor:pointer; text-align:center;}/*----ǳ��ɫ���߰�ť---*/
+.btn_blue:hover{background:#d6f0fd;}
+/*======编辑对话end=======*/

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+  	<package name="users" namespace="/users" extends="default">
+        <!-- 获取用户信息 -->
+       <!--  <action name="userinfo" class="com.free4lab.account.api.action.userinfo.UserInfoAction">
+            <result name="success">/login/webrtc_login.jsp</result>
+            <result name="fail">/error.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action> -->
+        
+        <!-- 登录 -->
+       <!--  <action name="login" class="com.free4lab.account.userinfo.login.LoginAction">
+            <result name="success" type="redirect">${redirect_url}</result>
+            <result name="input">/error/error.jsp</result>
+        </action> -->
+  	</package>
+  	<package name="api/users" namespace="/api/users" extends="default">
+	    <!-- 【接口】根据用户id(列表)返回用户的基本信息 -->
+  		<action name="show" class="com.free4lab.account.api.action.userinfo.GetUserInfoAction">
+	    	<result name="success" type="json"></result>
+	    </action>
+	    <action name="show_batch" class="com.free4lab.account.api.action.userinfo.GetUserInfosAction">
+	    	<result name="success" type="json"></result>
+	    </action>
+		<action name="show_company_page" class="com.free4lab.account.api.action.userinfo.GetUserInfosByCompanyAction">
+            <result name="success" type="json"></result>
+        </action>
+	    
+	    <!-- 【接口】根据用户邮箱获取用户id -->
+	    <action name="id" class="com.free4lab.account.api.action.userinfo.GetUserIdByEmailAction">
+	    	<result name="success" type="json"></result>
+	    </action>
+	    
+		<!-- 【接口】根据用户id获取用户邮箱 -->
+        <action name="email" class="com.free4lab.account.api.action.userinfo.GetEmailByUserIdAction">
+            <result name="success" type="json"></result>
+        </action>
+        
+	    <!-- 【接口】检查用户的基本信息 -->
+	    <action name="is_basic" class="com.free4lab.account.api.action.userinfo.CheckBasicUserInfoAction">
+	    	<result type="stream">
+            	<param name="contentType">text/html</param>
+            	<param name="inputName">inputStr</param>
+            </result>
+	    </action>
+
+	    <!-- 【接口】获取系统头像uuid-->
+	    <action name="system_avaters" class="com.free4lab.account.api.action.userinfo.GetSystemAvaterAction">
+            <result name="success" type="json"></result>
+            <result name="input" type="json"></result>
+        </action>
+        
+        <!-- 【接口】修改用户的UserInfo-->
+	    <action name="update" class="com.free4lab.account.api.action.userinfo.UpdateUserInfoAction">
+            <result name="success" type="json"></result>
+        </action>
+        
+        <!-- 【接口】设置用户默认的头像和昵称-->
+	    <action name="update_default" class="com.free4lab.account.api.action.userinfo.DefaultUserInfoAction">
+            <result type="stream" name="success">
+            	<param name="contentType">text/html</param>
+            	<param name="inputName">inputStr</param>
+            </result>
+        </action>
+        
+        <!-- 【接口】根据用户各项信息获取用户信息（需分页）-->
+	    <action name="search_page" class="com.free4lab.account.api.action.userinfo.SearchUserInfoAction">
+            <result name="success" type="json"></result>
+        </action>
+  	</package>
+</struts>

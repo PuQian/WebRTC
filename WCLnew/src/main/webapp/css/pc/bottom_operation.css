@@ -1,0 +1,25 @@
+
+/*===========�м� �ײ������ͷ�ҳ=============*/
+.bottom_operation{width:100%;height:40px; clear:both; overflow:hidden; border-top:1px solid #d9e3e7;}
+.bottom_operation_l{width:200px; height:40px; padding-left:25px; float:left; line-height:40px; color:#489fcf; font-size:14px;}
+.bottom_operation_l a{padding:0 10px; color:#489fcf;}
+.bottom_operation_r{width:190px; height:40px;padding-left:35px; float:right; overflow:hidden;color:#666; font-size:12px;}
+.bottom_operation_r span{height:22px; margin:10px 2px 0; overflow:hidden; display:block; float:left; line-height:22px;}
+.bottom_operation_r .page_first,
+.bottom_operation_r .page_up,
+.bottom_operation_r .page_next,
+.bottom_operation_r .page_end{width:16px; height:16px; margin:12px 2px 0; overflow:hidden; background-image:url(images/pagedown_arrow.png); line-height:100px; cursor:pointer; }
+
+.bottom_operation_r .page_first:hover{background-position:0 -64px;}
+.bottom_operation_r .page_up{background-position:0 -16px;}
+.bottom_operation_r .page_up:hover{background-position:0 -80px;}
+.bottom_operation_r .page_next{background-position:0 -32px;}
+.bottom_operation_r .page_next:hover{background-position:0 -96px;}
+.bottom_operation_r .page_end{background-position:0 -48px;}
+.bottom_operation_r .page_end:hover{background-position:0 -112px;}
+
+.bottom_operation_r .input_num{width:30px; height:20px;  border:1px solid #bad1de; text-align:center; color:#666;}/*---��������--*/
+
+
+
+/*===========�м� �ײ������ͷ�ҳ end=============*/

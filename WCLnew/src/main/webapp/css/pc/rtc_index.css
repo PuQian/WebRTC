@@ -1,0 +1,28 @@
+﻿/*
+------------------------------- 
+Site:        业务主界面
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+
+
+/*=======中 欢迎 =======*/
+.rtc_index_welcome{width:100%; height:70px; padding:40px 0 25px; border-bottom:1px solid #f3f3f3;}
+.rtc_index_welcome h2{padding-left:55px; font-size:24px; font-weight:100; line-height:180%;}
+.rtc_index_welcome p{padding-left:55px; font-size:14px; }
+.rtc_index_welcome p a{margin-right:10px; color:#666;}
+/*=======中 欢迎end =======*/
+
+
+/*=======中 功能介绍 =======*/
+.rtc_index_function{width:100%; margin:auto; overflow:hidden;}
+.rtc_index_function2{width:600px; margin-left:10px; }
+.rtc_index_function ul{margin:50px 0 0 50px;}
+.rtc_index_function li{width:260px; height:90px; margin:0 0 25px 0; float:left; overflow:hidden;}
+.rtc_index_function .li_img{width:75px; height:75px; margin-right:6px; float:left;}
+.rtc_index_function .li_text{width:150px; height:75px; float:left;}
+.rtc_index_function h3{font-size:18px; line-height:180%;}
+.rtc_index_function p{ font-size:14px; color:#999;  line-height:20px;}
+/*=======中 功能介绍 end=======*/
+

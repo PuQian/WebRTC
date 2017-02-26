@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!-- - This file is included by the struts.xml file as an example - of how 
+	to break up the configuration file into multiple files. -->
+<struts>
+	<!-- 根目录 / -->
+	<package name="root" namespace="/" extends="default">
+		<action name="" class="com.free4lab.webrtc.action.account.RootAction">
+			<result type="redirectAction">jump</result>
+			<result name="input">/index.jsp</result>
+		</action>
+		<action name="jump" class="com.free4lab.webrtc.action.account.RootAction">
+			<result name="success">/basic/jump.jsp</result>
+		</action>
+		<action name="main" class="com.free4lab.webrtc.action.account.RootAction">
+			<result name="success">/basic/pc.jsp</result>
+		</action>
+		<action name="templogin"
+			class="com.free4lab.webrtc.action.account.TempLoginAction">
+			<result type="json"></result>
+		</action>
+		<action name="temploginauth"
+			class="com.free4lab.webrtc.action.account.TempLoginAuthAction">
+			<result name="success">/basic/tempplatform3.jsp</result>
+			<result name="error">/error/error.jsp</result>
+		</action>
+		<action name="mobile" class="com.free4lab.webrtc.action.account.RootAction">
+			<result name="success">/basic/mobile.jsp</result>
+		</action>
+		<action name="chat" class="com.free4lab.webrtc.action.account.RootAction">
+			<result name="success">/basic/chat.jsp</result>
+		</action>
+		<action name="serverAdd" class="com.free4lab.webrtc.common.ServerAddUtil">
+		    <result name="success" type="json"></result>
+		</action>
+		<action name="requestSessionHistory" class="com.webrtc.action.findWCSHistory">
+		    <result type="json"></result>
+		</action>
+		<!-- 获取未接通话记录和未接会议Action -->
+		<action name="requestMissedCalls" class="com.webrtc.action.FindMissedCallsAction">
+		    <result type="json"></result>
+		</action>
+		<!-- 获取会议召开/历史会议记录-->
+		<action name="requestMeetingHistory" class="com.webrtc.action.FindMeetingHistory">
+		    <result type="json"></result>
+		</action>
+		<!-- 获取我的会议记录-->
+		<action name="requestMyMeeting" class="com.webrtc.action.FindMyMeeting">
+		    <result type="json"></result>
+		</action>
+		<action name="enterAdministration" class="com.webrtc.action.EnterAdministrationAction">
+		    <result>/basic/enteradmin.jsp</result>
+		</action>
+		<!--搜索好友-->
+		<action name="SearchEaseFriendsbykeyword" class="com.webrtc.action.SearchEaseFriendsbykeyword">
+		    <result type="json"></result>
+		</action>
+		<!--删除EaseFriend好友记录-->
+		<action name="DelEaseFriend" class="com.webrtc.action.ManageEaseFriendAction" method="delEaseFriend">
+			<result type="json"></result>
+		</action>
+		<!--添加EaseFriend好友记录-->
+		<action name="AddEaseFriend" class="com.webrtc.action.ManageEaseFriendAction" method="addEaseFriend">
+			<result type="json"></result>
+		</action>
+		<!-- 查询uid -->
+		<action name="SearchUid" class="com.webrtc.action.SearchUidAction">
+			<result type="json"></result>
+		</action>
+	</package>	
+</struts>

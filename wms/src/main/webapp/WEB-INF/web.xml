@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="struts_blank" version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <display-name>FreeAccount</display-name>
+    
+   <!--  <filter>
+        <description>在特定的URL，检查用户是否登录，查看session["accessToken"]是否存在且有效</description>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>com.free4lab.account.userinfo.login.LoginFilter</filter-class>
+        <init-param>
+            <description>权限不够时转向的路径</description>
+            <param-name>failPage</param-name>
+            <param-value>/users/login/?needsauth</param-value>
+        </init-param>
+        <init-param>
+            <description>下面的uri列表不进行权限检查,多个URI用;分开如：/accounts/login;/accounts/login.jsp; </description>
+            <param-name>excludeURIs</param-name>
+            <param-value>/users/login;/users/logout;/users/show;/users/show_users;friendships/*;</param-value>
+        </init-param>
+    </filter> -->
+    
+    <filter>
+        <description>编码设置</description>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+	<filter>        
+      	<description>gzip</description>        
+      	<filter-name>gzipFilter</filter-name>        
+      	<filter-class>org.eclipse.jetty.servlets.GzipFilter</filter-class>    
+	</filter>    
+	<filter-mapping>        
+	    <filter-name>gzipFilter</filter-name>        
+	    <url-pattern>/*</url-pattern>    
+	</filter-mapping>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+    
+  <!--   <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>users/userinfo</url-pattern>
+    </filter-mapping> -->
+    
+      <!-- session失效监听器配置 -->  
+	  <listener>  
+	    <listener-class>com.free4lab.account.manager.SessionManager</listener-class>  
+	  </listener>  
+    
+    
+    <!-- Struts2的配置 -->
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
+    
+    <!--
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error/500.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>403</error-code>
+        <location>/error/403.jsp</location>
+    </error-page>-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error/404.jsp</location>
+    </error-page>
+    
+    <session-config>
+         <session-timeout>1440</session-timeout>
+    </session-config>
+    
+</web-app>

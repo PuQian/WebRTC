@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="oauth2" namespace="/oauth2" extends="default">
+        <!-- 检查登录信息 -->
+        <action name="logincheck" class="com.free4lab.account.action.oauth2.LoginCheckAction">
+            <result name="fail">${failUrl}</result>
+            <result name="error">/error.jsp</result>
+            <result name="author">/authorization/authorization.jsp</result>
+            <result name="freesharemobile" type="redirect">/login/freeshare_mobile_code.jsp?code=${accTokenValue}</result>
+        </action>
+    </package> 
+    
+    <package name="api/oauth2" namespace="/api/oauth2" extends="default">
+	    <!-- 【接口】授权，返回oauthToken -->
+        <action name="authorize" class="com.free4lab.account.api.action.oauth2.AuthorizeAction">
+        	<result name="success">${loginUrl}</result>
+        	<result name="error">/error.jsp</result>
+        	<result name="author">/authorization/authorization.jsp</result>
+        	<result name="freesharemobile" type="redirect">/login/freeshare_mobile_code.jsp?code=${accTokenValue}</result>
+        </action>
+        <action name="tempauthorize" class="com.free4lab.account.api.action.oauth2.TempAuthorizeAction">
+        	<result name= "success" type="json"></result>
+        </action>
+        <!-- 【接口】获取accessToken -->
+        <action name="access_token" class="com.free4lab.account.api.action.oauth2.AccessTokenAction">
+	        <result name="success" type="json"></result>
+	    </action>
+	    
+	    <!-- 【接口】验证accessToken -->
+        <action name="get_token_info" class="com.free4lab.account.api.action.oauth2.GetTokenInfoAction">
+	        <result name="success" type="json"></result>
+	    </action>
+	    
+	    <!-- 【接口】退出登录 -->
+	    <action name="revokeoauth2" class="com.free4lab.account.api.action.oauth2.RevokeOauth2Action">
+	        <result type="stream">
+            	<param name="contentType">text/html</param>
+            	<param name="inputName">inputStr</param>
+            </result>
+	    </action>
+		
+  	</package>
+  	
+  	
+  	<package name="api/WMSAuth" namespace="/api" extends="default">
+ <!-- 【接口】WMS向第三方平台认证接口 -->
+  	 <action name="WMSAuth" class="com.free4lab.account.api.action.WMSAuth.WMSAuth">
+  	    <result name= "success" type="json"></result>
+  	 </action>
+  	</package> 
+</struts>

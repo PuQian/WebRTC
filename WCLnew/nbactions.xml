@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-jetty:run</actionName>
+            <displayName>jetty:run</displayName>
+            <goals>
+                <goal>jetty:run</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>CUSTOM-jetty:run -Djetty.port=8081</actionName>
+            <displayName>jetty:run -Djetty.port=8081</displayName>
+            <goals>
+                <goal>jetty:run</goal>
+                <goal>-Djetty.port=8081</goal>
+            </goals>
+        </action>
+    </actions>

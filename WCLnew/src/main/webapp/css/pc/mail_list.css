@@ -1,0 +1,25 @@
+﻿/*
+------------------------------- 
+Site:        企业通讯录
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+
+
+/*=======企业通讯录=======*/
+.mail_list{width:100%; height:490px; padding:25px 0 0; overflow:auto;}
+.mail_list li{width:230px; height:70px; margin:0 0 5px 18px; padding:10px 20px; border:1px solid #fff; float:left; overflow:hidden;cursor:pointer;}
+.mail_list .list_portrait{width:65px; height:65px; float:left; overflow:hidden;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;}
+ .mail_list .list_portrait img{width:65px; height:65px;}
+.mail_list .list_text{width:155px; margin-left:10px;float:left; }
+.mail_list .list_text h3{overflow:hidden; white-space:nowrap;text-overflow:ellipsis;font-size:18px; color:#333;line-height:150%; font-weight:100;}
+.mail_list .list_text p,
+.mail_list .list_text a{overflow:hidden; white-space:nowrap;text-overflow:ellipsis;font-size:14px; color:#999; line-height:150%;}
+.mail_list li.on{background:#ecf6fb; border:1px solid #c4e1f1;}
+/*=======企业通讯录end =======*/
+
+
+
+

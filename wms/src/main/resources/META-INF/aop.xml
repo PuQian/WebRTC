@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+
+<aspectj>
+	<weaver options="-verbose -showWeaveInfo">
+		<!-- Here is where we specify the classes to be woven. You can specify 
+			package names like com.company.project.* -->
+		<include within="com.free4lab.account.manager.*" />
+		<include within="com.free4lab.account.action.*.*"/>
+	</weaver>
+
+	<aspects>
+		<!-- <aspect name="org.perf4j.log4j.aop.TimingAspect" /> -->
+		<!-- if SLF4J/logback use org.perf4j.slf4j.aop.TimingAspect instead -->
+	</aspects>
+</aspectj>

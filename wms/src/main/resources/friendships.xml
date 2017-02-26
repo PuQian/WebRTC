@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+  	<package name="api/friendships" namespace="/api/friendships" extends="default">
+        <!-- 【接口】删除好友 -->
+        <action name="destroy" class="com.free4lab.account.api.action.friendships.DelFriendAction">
+	        <result name="success" type="json"></result>
+	    </action>
+	    <!-- 【接口】好友列表（无群组） -->
+        <action name="friends" class="com.free4lab.account.api.action.friendships.GetFriendListAction">
+	        <result name="success" type="json"></result>
+	    </action>
+	    <!-- 【接口】好友列表（有群组） -->
+        <action name="groups" class="com.free4lab.account.api.action.friendships.GetGroupFriendListAction">
+	        <result name="success" type="json"></result>
+	    </action>
+	    <!-- 【接口】某一群组的好友列表  -->
+        <action name="group" class="com.free4lab.account.api.action.friendships.GetOneGroupFriendListAction">
+	        <result name="success" type="json"></result>
+	    </action>
+  	</package>
+  	
+  	<package name="api/friendships/friends" namespace="/api/friendships/friends" extends="default">
+  	    <!-- 【接口】验证是否是我的好友 -->
+        <action name="is_friend" class="com.free4lab.account.api.action.friendships.IsFriendAction">
+            <result name="success" type="json"></result>
+        </action>
+        <!-- 【接口】获取一个好友的详细信息 -->
+        <action name="friend_complete" class="com.free4lab.account.api.action.friendships.GetFrDetailInfoAction">
+            <result name="success" type="json"></result>
+        </action>
+        <!-- 【接口】验证我的好友关系是否发生修改，若修改，返回最新的修改时间 -->
+        <action name="is_updated" class="com.free4lab.account.api.action.friendships.IsUpdatedAction">
+            <result name="success" type="json"></result>
+        </action>
+  	</package>
+  	
+  	<package name="api/friendships/groups" namespace="/api/friendships/groups" extends="default">
+  		<!-- 【接口】添加群组 -->
+  		<action name="create" class="com.free4lab.account.api.action.friendships.AddGroupAction">
+        	<result name="success" type="json"></result>
+        </action>
+        <!-- 【接口】删除群组 -->
+        <action name="destroy" class="com.free4lab.account.api.action.friendships.DelGroupAction">
+	        <result name="success" type="json"></result>
+	    </action>
+	    <!-- 【接口】更新群组 -->
+        <action name="update" class="com.free4lab.account.api.action.friendships.UpdateGroupAction">
+	        <result name="success" type="json"></result>
+	    </action>
+		<!-- 【接口】查找根组 -->
+        <action name="is_root" class="com.free4lab.account.api.action.friendships.RootGroupAction">
+            <result name="success" type="json"></result>
+        </action>
+		<!-- 【接口】获取群组 -->
+        <action name="show" class="com.free4lab.account.api.action.friendships.GetGroupListAction">
+            <result name="success" type="json"></result>
+        </action>
+        <!-- 【接口】获取一个群组的基本信息 -->
+        <action name="onegroup" class="com.free4lab.account.api.action.friendships.GetOneGroupAction">
+            <result name="success" type="json"></result>
+        </action>
+  	</package>
+  	
+  	<package name="api/friendships/groups/members" namespace="/api/friendships/groups/members" extends="default">
+  	    <!-- 【接口】添加好友 -->
+        <action name="add" class="com.free4lab.account.api.action.friendships.AddFriendAction">
+            <result name="success" type="json"></result>
+        </action>
+        <!-- 【接口】更新好友 -->
+        <action name="update" class="com.free4lab.account.api.action.friendships.UpdateFriendAction">
+            <result name="success" type="json"></result>
+        </action>
+  	</package>
+</struts>

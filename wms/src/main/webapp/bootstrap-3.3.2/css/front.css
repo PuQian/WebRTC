@@ -1,0 +1,177 @@
+nav.navbar{
+  z-index: 999;
+  border: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+.col-md-6{
+
+  width:65%;
+}
+.col-md-7{
+
+  width:35%;
+}
+
+.col-md-8{
+  width:100%;
+}
+
+.hero{
+  background-image: url("../../images/freeshare/login_big.png");
+  background-position: center center;
+  overflow: hidden;
+  background-size: cover;
+  height: 685px;
+  position: relative;
+  top: -70px;
+  padding-top: 200px;
+}
+.login-page-btn{
+  border: 2px solid white;
+}
+.top_margin30{
+  margin-top: 30px;
+}
+
+.top_margin7{
+  margin-top: 7px;
+}
+
+.padding-right-left{
+  padding-right:0px;
+  padding-left:0px;
+}
+
+.hero-login{
+  background-image: url('../../images/freeshare/login_banner.png');
+  background-position: center center;
+  overflow: hidden;
+  background-size: cover;
+  height: 180px;
+}
+.front-inner{
+  min-height:100%;
+  height: auto !important;
+  margin: 0 auto -80px;
+}
+.footer-login, .front-push{
+  height: 80px;
+}
+.footer-login{
+  border-top: 1px solid #ccc;
+}
+.footer-login>div{
+  padding-top: 30px;
+}
+
+.front-login-hr{
+  height: 1px;
+  background-color: #ccc;
+  margin: 30px 0;
+}
+
+.front-login-hr1{
+  height: 1px;
+  background-color: #ccc;
+  margin: 10px 0;
+}
+
+.margin1{
+  margin-top:10px;
+}
+
+.front-brand-img{
+    height: 73px;
+    width: 540px;
+    background-image: url('../../images/webrtc/logo_index.png');
+}
+.feature{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.toppadding-10{
+    padding-top: 10px;
+}
+.footer{
+  background-color: #333;
+  height: 160px;
+  padding-top: 45px;
+  margin-top: 100px;
+}
+.footer-copyright{
+  color: #333;
+}
+.front-brand{
+    padding-top: 11px;
+}
+
+.front-remfield {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+
+
+.redletter, .redletter:visited{ color:red!important}
+
+
+
+@media (max-width: 767px) {
+ 
+    .nav-brand {
+        float: left;
+        width: 25%;
+        height: 80px;
+        position: relative;
+        margin-left: 15px;
+    }
+    .nav-brand img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width:300px;
+    }
+}
+
+@media (min-width: 768px) {
+ 
+    .nav-brand {
+        float: left;
+        padding: 0px 15px 10px 0;
+    }
+}
+
+.padding0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.margin0{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.padding-top45{
+  padding-top: 45px;
+}
+
+.customer_service{
+	width:100px;
+	height:140px;
+	display:block;
+	position:fixed;
+	z-index:999;
+	right:20px;
+	bottom:100px;
+}

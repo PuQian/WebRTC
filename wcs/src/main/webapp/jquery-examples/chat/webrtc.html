@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>WebRTC Demo</title>
+  <script type="text/javascript" src="../../org/cometd.js"></script>
+  <script type="text/javascript" src="../../org/cometd/AckExtension.js"></script>
+  <script type="text/javascript" src="../../org/cometd/ReloadExtension.js"></script>
+  <script type="text/javascript" src="../../jquery/jquery-1.8.2.js"></script>
+  <script type="text/javascript" src="../../jquery/jquery.md5.js"></script>
+  <script type="text/javascript" src="../../jquery/jquery.cookie.js"></script>
+  <script type="text/javascript" src="../../jquery/jquery.cometd.js"></script>
+  <script type="text/javascript" src="../../jquery/jquery.cometd-reload.js"></script>
+  <script type="text/javascript" src="libcometd.js"></script>
+  <script type="text/javascript" src="libwebrtc.js"></script>
+  <script type="text/javascript" src="webrtc_media.js"></script>
+  <script type="text/javascript" src="rtcprotocol.js"></script>
+  <!-- script type="text/javascript" src="websocket.js"></script> -->
+  <script>
+	if(com.webrtc.getMediaSupport() == true){
+		console.log("media API support!");
+	} else{
+		console.log("media API unsupport!");
+	}
+  </script>
+</head>
+<body>
+  <table border="0">
+    <tr>
+      <td>Local  Video</td>
+      <td>Remote Video</td>
+    </tr>
+    <tr>
+      <td><video width="320" height="240" id="local_media"
+          autoplay="autoplay"></video></td>
+      <td><video width="320" height="240" id="remote_media"
+          autoplay="autoplay"></video></td>
+      <td><canvas id="frame_buffer" style="visibility:hidden"></canvas></td>
+    </tr>
+  </table>
+  <hr>
+  <div id="config">
+	Server&nbsp;&nbsp;:<input type="text" id="server" value="http://webrtcmediabosh.free4lab.com/webrtcboshserver/cometd"/><br>
+	localID&nbsp;:<input type="text" id="callerid" value="Alice@gmail.com">(connect前指定)<br>
+	remoteID:<input type="text" id="calleeid" value="Bob@gmail.com">(call前指定)<br>
+	<!--input type="button" id="connect" value="connect" onClick="connectToServer()"/-->
+	<input type="button" id="start" value="connect" onClick="com.webrtc.connect()"/>
+	<!--input type="button" id="captureLocalMedia" value="getUserMedia" onClick="com.webrtc.captureLocalMedia()"/-->
+	<input type="button" id="call_video" value="call_video" onClick="com.webrtc.call(true,true)"/>
+	<input type="button" id="call_audio" value="call_audio" onClick="com.webrtc.call(true,false)"/>
+	<input type="button" id="hangup" value="hangUp" onClick="com.webrtc.hangUp()"/>
+	<input type="button" id="disconnect" value="disconnect" onClick="com.webrtc.closeAll()"/>
+	<!--input type="button" id="disconnect" value="disconnect" onClick="disconnect()"-->
+  </div>
+  <hr>
+  <div>
+	连接服务器(connect)前需要填写localID，发起呼叫(call)前需要填写remoteID<br>
+	<a href="http://www.chromium.org/getting-involved/dev-channel">请安装chrome dev版本进行测试</a><br>
+  </div>
+</body>
+</html>

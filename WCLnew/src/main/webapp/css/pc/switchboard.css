@@ -1,0 +1,54 @@
+﻿/*
+------------------------------- 
+Site:        企业总机界面
+Author:      xuduo
+Updated:     2016-03-13
+-------------------------------
+*/
+
+
+body{background:#97a2a7; }
+.switchboard_box{width:890px; height:630px; padding:0; margin:0px auto 0; overflow:hidden; -moz-border-radius:6px;   -webkit-border-radius: 6px;  border-radius:6px;
+box-shadow:0 0 18px #79858c;}
+
+
+
+/*=======头部=======*/
+.switchboard_head{width:100%; height:65px; overflow:hidden; background:#489fcf;}
+
+ /*--------头部 左 用户信息-------*/
+.switchboard_head .user_info{width:500px; float:left; margin:14px 0 0 25px; overflow:hidden;}
+.switchboard_head .user_info .portrait{width:40px; height:40px;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%; overflow:hidden; float:left;}
+ .switchboard_head .user_info .portrait img{width:40px; height:40px;}
+.switchboard_head .user_info .user_name{padding:0 3px 0 10px; float:left; display:inline-block;font-size:24px;line-height:40px; font-weight:100; color:#fff;}/*---用户名称--*/
+  /*--------头部 左 用户信息- end------*/
+
+ /*--------头部 右 操作-------*/
+.switchboard_head_right{width:250px; margin-top:18px;float:right; }
+.switchboard_head_right li{width:35px; height:35px; margin-right:8px; float:right; overflow:hidden; background-image:url(images/meeting_head_icon.png); cursor:pointer; text-indent:-80px;}
+.switchboard_head_right .operation_close{margin-right:15px; margin-left:20px;background-position:0 0;}
+.switchboard_head_right .operation_video{background-position:0 -35px;}
+.switchboard_head_right .operation_audio{background-position:0 -70px;}
+.switchboard_head_right .operation_file{background-position:0 -105px;}
+.switchboard_head_right .operation_add{background-position:0 -140px;}
+.switchboard_head_right .operation_exit{background-position:0 -175px;}
+.switchboard_head_right .operation_set{background-position:0 -210px;}
+.switchboard_head_right .operation_time{background-position:0 -245px;}
+.switchboard_head_right .operation_artificial{background-position:0 -280px;}
+ /*--------头部 右 操作 end-------*/  
+
+ /*-----*/
+/*=======头部end=======*/
+
+
+
+/*=======主体 左=======*/
+.switchboard_box_l{width:600px; height:630px; float:left; background:#fff; border-left:1px solid #d9e3e7;}
+/*=======主体 右=======*/
+.switchboard_box_r{width:286px; height:630px; float:right; }
+.switchboard_box_r .switchboard_video{width:270px; margin:10px auto;}
+ .switchboard_box_r .switchboard_video li img{width:270px; height:178px; margin-bottom:10px;}
+/*=======主体 右 end=======*/
+
+

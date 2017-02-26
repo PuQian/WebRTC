@@ -1,0 +1,110 @@
+/* CSS Document */
+@charset "utf-8";
+
+*{
+	 margin:0;
+	 padding:0;
+	 text-decoration:none;
+}
+
+html,body{
+    background:#ffffff;
+	margin:0;
+	padding:0;
+	font: normal 100% Helvetica, Arial, sans-serif;
+	color:#FFFFFF;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+	}
+#sub
+{   
+     width:100%;
+}
+
+#logo{
+	width: 80%;
+	margin-top: 20%;
+}
+
+#logo img{
+	width: 100%;
+}
+
+
+
+table
+{
+   width:80%;
+   margin-top:1em; 
+   color: #858585;
+   font-weight: bolder;
+}
+
+input
+{
+	border: none;
+    border-bottom: 1px solid #a9a9a9;
+	height:2.1em;
+	background-color: #fff;
+	width:90%;
+	margin-left:1.2%;
+	margin-right:1%;
+	margin-bottom:0.5em;
+	font-size:1em;
+}
+
+input:hover{
+	border: none;
+    border-bottom: 1px solid #2f96d8;
+}
+
+#submit_button
+{
+	width:80%;
+    background-color:#2f96d8;
+	border: none;
+	height:2.8em;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top: 0.8em;
+	color:#FFFFFF;
+	font-size:1em;
+}
+
+#subfooter
+{
+	position: absolute;
+    width: 100%;
+    height: 3%;
+    bottom: 0;
+    position: absolute;
+	font-size:0.8em;
+	line-height: 3%;
+	color: #858585;
+}
+
+#toast_content{
+	position: absolute;
+	bottom: 20%;
+	height: 30px;
+	line-height: 30px;
+	-moz-border-radius: 3px;      /* Gecko browsers */
+    -webkit-border-radius: 3px;   /* Webkit browsers */
+    border-radius:3px;            /* W3C syntax */
+    left:30%;
+    right: 30%;
+
+}
+
+#toast{
+	opacity: 0.5;
+	padding-left: .1em;
+	padding-right: .1em;
+	width: 100%;
+	height: 100%;
+	font-size: 1em;
+	color:#fff;
+	text-align: center;
+	background-color: #777777;
+}

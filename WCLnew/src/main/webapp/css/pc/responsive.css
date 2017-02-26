@@ -1,0 +1,47 @@
+/*导航栏整体样式*/
+.nav-overall{
+    height:80px;
+}
+/*导航栏用户头像li*/
+.nav-user{
+	top:10px;
+	left:20px;
+	width:50px; 
+	height:50px;
+}
+/*导航栏用户头像图片*/
+.nav-user-img {
+    border-radius:50px;
+    width:100%; 
+	height:100%;
+}
+/*导航栏用户名*/
+.nav-user-name{
+    top:15px;
+    left:30px;
+    font-size:18px;
+}
+/*导航栏消息提醒li*/
+.nav-notice{
+	top:30px;
+	left:80px;
+	width:25px; 
+	height:25px;
+}
+/*导航栏消息提醒图片*/
+.nav-notice-img{
+	border-radius:50px;
+    width:100%; 
+	height:100%;
+}
+/* 导航栏右侧 */
+.nav-right {
+    position: relative;
+    float: right;
+}
+/*导航栏退出按钮*/
+.logout_button{
+	position: absolute;
+	right: 45px;
+	top: 20px;
+}

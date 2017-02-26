@@ -1,0 +1,1 @@
+<script type="text/javascript" src="<%=com.free4lab.account.common.Constants.CSS_JS_SERVER%>js/public.js"></script>

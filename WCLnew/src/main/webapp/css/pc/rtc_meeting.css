@@ -1,0 +1,59 @@
+/*
+------------------------------- 
+Site:        web����ģ��
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+
+
+/*=======�����б� =======*/
+.meeting_list{width:530px; height:430px; margin:30px auto 0;}
+.meeting_list li{width:100%; height:115px;}
+.meeting_list .meeting_time{width:70px; height:70px; margin-right:20px; float:left; background:url(images/meeting_time.png) no-repeat; text-align:center;}/*--����--*/
+.meeting_list .meeting_time span{display:block;}
+.meeting_list .meeting_time .time_year{color:#fff; font-size:14px; line-height:250%;}
+.meeting_list .meeting_time .time_date{color:#333; font-size:20px; line-height:120%;}
+.meeting_list .meeting_text{width:350px; height:110px; float:left; position:relative;}/*--���⡢����--*/
+.meeting_list .meeting_text h3{width:100%; margin:5px 0 8px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; font-size:18px;}
+.meeting_list .meeting_text .meeting_h3{width:265px;}
+.meeting_list .meeting_text p{overflow:hidden;white-space:nowrap;text-overflow:ellipsis; font-size:14px; color:#999; line-height:20px;}
+.meeting_list .meeting_opea{width:80px; height:100px; float:right;}/*--����--*/
+.meeting_list .btn_blue,
+.meeting_list .btn_blue2{margin:2px 0 10px;}
+.meeting_list .btn_red{width:80px; position:absolute; top:2px; right:-2px;}
+/*========�����б� end =======*/
+
+/*=======�������� =======*/
+.meeting_found{width:530px; height:500px; margin:30px auto 0;overflow:hidden;}
+.meeting_found table td{padding:4px; font-size:14px; line-height:35px; vertical-align:top;}
+.meeting_found .meeting_input{min-height:35px; background:#fff; border:1px solid #bad1de;  border-radius:4px;font-size:14px; line-height:35px;}
+.meeting_found .meeting_name{width:400px; height:35px;}
+.meeting_found .meeting_date{width:155px; height:35px;padding-left:10px;float:left; border:none; font-size:14px;}
+.meeting_found .meeting_time{width:55px; height:35px; padding-left:10px;float:left;border:none;font-size:14px;}
+.meeting_found .meeting_person{width:365px; height:60px; border:none; border-right:1px solid #bad1de;}
+.meeting_found .meeting_person_num{width:55px; height:35px; float:left;border:none;border-left:1px solid #bad1de;border-right:1px solid #bad1de;font-size:14px; text-align:center;}
+.meeting_found .input_more,
+.meeting_found .input_num_add,
+.meeting_found .input_num_minus,
+.meeting_found .input_add_person{width:20px; height:20px; float:right; overflow:hidden; margin:7px; background:url(images/meeting_found_icon.png) no-repeat; cursor:pointer; line-height:288px;}
+.meeting_found .input_more:hover{background-position:-20px 0;}
+.meeting_found .input_num_add{float:left; background-position:0 -20px;}
+.meeting_found .input_num_add:hover{ background-position:-20px -20px;}
+.meeting_found .input_num_minus{background-position:0 -40px;}
+.meeting_found .input_num_minus:hover{background-position:-20px -40px;}
+.meeting_found .input_add_person{width:60px; height:50px; background-position:0 -60px;}
+.meeting_found .media_type img{margin:0 8px 5px 0; cursor:pointer;}
+.meeting_found .meeting_btn1,
+.meeting_found .meeting_btn2{width:130px; height:40px; margin:3px 8px 0 0; border-radius:4px; font-size:18px; cursor:pointer; line-height:40px;}
+.meeting_found .meeting_btn1{border:1px solid #1bbd55; background:#47cd78; color:#fff;}
+.meeting_found .meeting_btn2{border:1px solid #79c1e9; background:#f0f9fe; color:#79c1e9;}
+
+/*add by pq*/
+.meetingTypeMenuLi{padding:0 10px; font-size:14px;}
+.meetingTypeMenuLi:hover{background-color:rgba(60,160,180,0.1);}
+.meeting_text{height:35px; padding-left:10px; font-size:14px;}
+.MeetingDropBorder{border-bottom:1px solid #bad1de;}
+
+/*=======��������end =======*/
+

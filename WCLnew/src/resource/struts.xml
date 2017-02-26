@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<!-- <constant name="struts.ui.templateDir" value="WEB-INF/template/" /> -->
+	<!-- 开发阶段，设置为开发模式 -->
+	<constant name="struts.devMode" value="false" />
+	<!--拦截没有后缀的URL,如/ /hello /user/ -->
+	<constant name="struts.action.extension" value="," ></constant>
+	<!-- 限制上传限制大小 ，改成20M -->
+	<constant name="struts.multipart.maxSize" value="62914560" />
+
+	<constant name="struts.action.excludePattern" value=".*editor/server/upload/jsp/imageUp.jsp" />
+
+	<package name="default" extends="struts-default" abstract="true">
+		<result-types>
+			<result-type name="json" class="org.apache.struts2.json.JSONResult" />
+		</result-types>
+
+		<!-- 当没有对应action时，返回404页面 -->
+		<default-action-ref name="404" />
+
+		<default-class-ref class="com.opensymphony.xwork2.ActionSupport" />
+
+		<global-results>
+			<!-- 当数据验证错误时，struts2默认返回input结果，如果对应的action没有定义input，返回406页面 -->
+			<result name="input">/error/error.jsp</result>
+			<result name="error">/error/error.jsp</result>
+			<result name="notlogined" type="redirect">?redirectUrl=${redirectUrl}
+			</result>
+			<result name="permissionDenied">/error/permission_denied.jsp</result>
+			<result name="hasnogroups">/error/has_no_groups.jsp</result>
+			<result name="deleted">/error/item_deleted.jsp</result>
+			<result name="indexfailed">/error/indexfailed.jsp</result>
+			<result name="storerror">/error/indexfailed.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping result="error" exception="java.lang.Exception" />
+		</global-exception-mappings>
+
+		<action name="404">
+			<result>/error/404.jsp</result>
+		</action>
+		
+		<action name="login" class="com.free4lab.webrtc.action.account.LoginAction">
+            <result name="success" type="redirect">${redirect_url}</result>
+            <result name="input" type="redirect">/error/404.jsp</result>
+       </action>
+
+		<action name="login2" class="com.free4lab.webrtc.action.account.LoginMobileAction">
+            <result name="success" type="redirect">${redirect_url}</result>
+            <result name="input" type="redirect">/error/404.jsp</result>
+       </action>
+
+	</package>
+
+	<!-- 所有与登录、退出有关的操作写在account中   -->
+	<include file="account.xml" />
+	<!-- 全局动作写在root中 -->
+	<include file="root.xml" />
+	<!-- 为了使用过滤器，目前只过滤/platform路径中的action，页面中所有业务操作都写在platform中 -->
+	<include file="platform.xml" />
+<!-- 	<include file="api.xml" /> -->
+	<!-- 作为协同业务平台，与WMS进行交互的接口 -->
+	
+</struts>

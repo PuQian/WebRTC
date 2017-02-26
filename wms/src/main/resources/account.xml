@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="account" namespace="/account" extends="default">
+		<!-- webrtc登录跳转 -->
+    	<action name="webrtclogin" class="com.free4lab.account.action.account.PreLoginAction">       
+            <result name="success">/login/_webrtc_login.jsp</result>
+        </action>
+        <!-- freeshare登录跳转 -->
+    	<action name="freesharelogin" class="com.free4lab.account.action.account.PreLoginAction">       
+            <result name="success">/login/_freeshare_login.jsp</result>
+        </action>
+		
+		<!-- 注册 -->
+        <action name="regcheck" class="com.free4lab.account.action.account.RegCheckAction">       
+            <interceptor-ref name="IllegalCharacterStack"></interceptor-ref>
+            <result name="success" type="json"></result>
+            <result name="fail" type="json"></result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="emailconfirming" class="com.free4lab.account.action.account.RegConfirmAction">  
+            <interceptor-ref name="IllegalCharacterStack"></interceptor-ref>
+            <result name="success">/register/regsuccess.jsp</result>
+            <result name="fail">/register/emailconfirming.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+
+        <!-- 找回密码 -->
+        <action name="pwdretrieve" class="com.free4lab.account.action.account.PwdRetrieveAction">
+            <result name="success">/retrieve/pwdretrieve.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="pwdretrievecheck" class="com.free4lab.account.action.account.PwdRetrieveCheckAction">       
+            <interceptor-ref name="IllegalCharacterStack"></interceptor-ref>
+            <result name="success">/retrieve/pwdretrieveconfirming.jsp</result>
+            <result name="fail">/retrieve/pwdretrieve.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="pwdretrieveconfirming" class="com.free4lab.account.action.account.PwdRetrieveConfirmingAction">       
+            <interceptor-ref name="IllegalCharacterStack"></interceptor-ref>
+            <result name="success">/retrieve/pwdretrievenewpwd.jsp</result>
+            <result name="fail">/error.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="pwdupdate" class="com.free4lab.account.action.account.PwdUpdateAction">       
+            <interceptor-ref name="IllegalCharacterStack"></interceptor-ref>
+            <result name="success" type="redirect">${loginUrl}</result>
+            <result name="fail">/error.jsp</result>
+            <result name="error">/error.jsp</result>
+        </action>
+        <action name="SecurityCodeImage" class="com.free4lab.account.action.securitycode.SecurityCodeImageAction">
+			<result name="success" type="stream">
+				<param name="contentType">image/jpeg</param>
+				<param name="inputName">imageStream</param>
+				<param name="bufferSize">2048</param>
+			</result>
+		</action>
+        
+    </package>
+    
+    <package name="api/account" namespace="/api/account" extends="default">
+        <!-- 【接口】添加/删除account用户 -->
+        <action name="create" class="com.free4lab.account.api.action.account.AddUserAction">
+            <result name="success" type="json"></result>
+        </action>
+        <action name="destroy" class="com.free4lab.account.api.action.account.DelUserAction">
+            <result name="success" type="json"></result>
+        </action>
+        <action name="tempcreate" class="com.free4lab.account.api.action.tempaccount.AddTempAccountAction">
+            <result name="success" type="json"></result>
+        </action>
+    </package>
+    
+    <package name="api/account/update" namespace="/api/account/update" extends="default">
+        <!-- 【接口】修改密码 -->
+        <action name="pwd" class="com.free4lab.account.api.action.account.UpdateOldPwdAction">
+            <result type="json"></result>
+        </action>
+    </package>
+</struts>

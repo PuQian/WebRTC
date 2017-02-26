@@ -1,0 +1,704 @@
+/*make by rxt for mobile*/
+    .ui-page-theme-a{
+        text-shadow:none;
+    }
+
+    .ui-input-text{
+        margin:0.7em 0.5em;
+      /*  border-radius: 0.2em;*/
+    }
+
+    .ui-input-text input::-moz-placeholder, .ui-input-search input::-moz-placeholder, textarea.ui-input-text::-moz-placeholder{
+        color: #A29D9D;
+        font-size: 14px;
+
+    }
+
+   /* .ui-checkbox input{
+        position:relative;
+        margin:0px 7px;
+        display:inline;
+        float:left; 
+    }*/
+
+    .ui-top-bar{
+        background-color:#16CEE6; 
+        height:46px;
+    }
+    
+    .ui-button{
+        font-size: 15px;
+        border:1px solid #FFF;
+        color: #FFF;
+    }
+
+    .ui-btn{
+         margin:1.2em 0.4em;
+         
+    }
+    
+    .ui-checkbox{
+        margin: 0.5em -0.7em;
+    }
+    
+    .ui-list{
+        margin-bottom: 0px;
+        
+    }
+    
+    .ui-content-bar{
+        display: flex;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .ui-label{
+        color:rgba(116, 110, 110, 0.9);
+    }
+    
+     .ui-btn.ui-corner-all{
+        border-radius:0.2em;
+    }
+
+    .loginbutton a.ui-link.ui-btn.ui-shadow.ui-corner-all{
+        background-color: #16CEE6;
+        color: #FFF;
+    }
+
+    .my-banner {
+        margin-bottom: 20px;
+        padding: 10px 12px;
+        background-color: #FF9937;
+        height: 85px;
+        color: #ffffff
+    }
+    
+    .my-banner-text {
+        display: block;
+    }
+    
+    .my-banner-count {
+        font-size: 40px;
+        -webkit-transform: translated(0, 0, 0);
+    }
+    
+    .my-banner-unit {
+        font-size: 20px;
+    }
+
+    .my-item-left{
+        position: absolute;
+        left:12px;
+        top:6px;
+        bottom: 2px;
+       /* border: 1px solid #ccc;*/
+        border-radius: 50px;
+      /*  background: #eee;*/
+        height: 52px;
+        width: 52px;
+        font-size: 12px;
+        line-height: 11px;
+    }
+
+    .my-item-count {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .my-item-right {
+        margin-left: 70px;
+        text-align: left;
+    }
+
+    .my-item-right p {
+        font-size: 12px;
+    }
+
+    .my-deletable {
+        z-index: 2;
+        background: #fff;
+    }
+
+    .my-delete {
+        height: 80px;
+        line-height: 80px;
+        width: 60px;
+        text-align: center;
+        position: absolute;
+        top:0;
+        right: 0;
+        background: rgb(250, 34, 34);
+        z-index: 1;
+        color: #fff;
+    }
+
+    [data-lazy] {
+        display: block;
+        margin: 10px auto;
+        height: 120px;
+        width: 240px;
+        border: 1px solid #eee;
+    }
+    /* For display example in phone */
+    .iphone .ui-dialog {
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .iphone .js-backdrop {
+        position: absolute;
+    }
+
+    /*in #loginpage begin*/
+    .mylogintitle{
+        color:#16CEE6;
+        font-size: 60px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+    
+/*    .myinputaccount{
+        position:relative;
+        top: 43px;
+        left:19px;
+        font-size: 24px;
+        color: #938F8F;    
+    }
+    
+    .myinputpwd{
+        position:absolute;
+        top: 219px;
+        left:34px;
+        font-size: 24px;
+        color: #938F8F;
+    }*/
+    
+    input.myinput{
+         min-height: 2.7em;
+        padding:0.7em 2.8em;
+    }
+        
+    .ui-checkbox input{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top:-3px;
+
+    }
+   /* .myloginimgleft{
+        position: absolute;
+        left:20px;
+    }*/
+    .mylogininputtextleft{
+        color: rgba(116, 110, 110, 0.9);
+        
+        display: inline-block;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        
+    
+    }
+    .mylogininputtextright{
+        color: rgba(116, 110, 110, 0.9);
+        
+        display: inline-block;
+
+        margin-top: -3px;
+        margin-left: 10px;
+        margin-right: 50px;
+         display: relative;
+        left: 30px;
+    
+    }
+
+    .myloginfootertitle{
+        color: #16CEE6;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .myloginfooterp{
+        text-align:center;
+        color:rgba(204, 196, 196, 0.9);
+        margin-top:20px;
+    }    
+    /*end------------end*/
+    /*in #*/
+    .ui-groupbutton .ui-button.js-active{
+        color:#16CEE6;
+        background-color:#FFF;
+    }
+   
+    .my-item-right p {
+        font-size: 15px;
+        margin:5px 0px 3px;
+    }
+    
+    .my-item-right p.ui-gray{
+        font-size: 12px;
+    }
+    
+    .ui-item .ui-right{
+        font-size: 11px;
+        right: 15px;
+    }
+    
+    .ui-item > a{
+        margin-left: -13px;
+        padding: 8px 10px;
+    }
+/*    .ui-icon.ion-person.myinputaccount{
+        position:relative;
+        top: 44px;
+        left:19px;
+        font-size: 24px;
+        color: #938F8F;
+        
+    }*/  
+    #avater{
+        margin: 4px auto;
+    }
+    
+    #avater img{
+        border-radius: 50%;
+    }
+    
+    .hidden{
+        display: none;
+    }
+/*    .title-search{
+        display: block;
+        position: relative;
+        top:150px;
+        width:80px;
+    }*/
+   
+    .pictureandps{
+        position: relative;
+        left: 70px;
+        font-size:16px;
+        margin: 17px 0px 15px;
+    }
+    
+    .pictureandps .rightsigns{
+        position:absolute;
+        right:75px;
+        top: -8px;
+        font-size: 35px;
+    }
+    
+    .characterp{
+        color:rgba(116, 110, 110, 0.9);
+        margin: 0px 11px;
+        font-size: 13px;
+    }
+   
+    .rightsignsfortwoline{
+        position: absolute;
+        right:18px;
+        top: 15px;
+        font-size: 35px;
+
+    }
+    
+    .rotatered{
+    -webkit-transform: rotate(45deg);/*Safari 4+,Google Chrome 1+ */
+    -moz-transform: rotate(45deg);/*Firefox 3.5+*/
+    position:absolute;
+    bottom:13px;
+    color: red;
+    }
+    
+    .rotategreen{
+    -webkit-transform: rotate(45deg);/*Safari 4+,Google Chrome 1+ */
+    -moz-transform: rotate(45deg);/*Firefox 3.5+*/
+    position:absolute;
+    bottom:13px;
+    color: #25CC25;
+    }    
+    
+    .rotaterightp{
+        position: relative;
+        left: 13px;
+    }
+   
+    .content-label{
+        font-size: 13px;
+        display: block;
+        color:rgba(116, 110, 110, 0.9);
+        padding-top:5px;
+    }
+    
+    .titlep{
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        margin-top:9px;
+        display:inline-block;
+        margin-left: 40px;
+    }
+
+    .titlerightp{
+        
+        font-size: 14px;
+        color: #fff;
+        margin-top:9px;
+        display:inline-block;
+        float:right;
+        margin-right: 20px;
+    }
+    
+    .collapsibleicon{
+        position: absolute;
+        top:15px;
+        color:rgba(116, 110, 110, 0.9);
+    
+    }
+    
+    .onlyps{
+        position:relative;
+        top:15px;
+        left: 20px;
+        bottom: 15px;
+        padding-bottom: 15px;
+        /*text-shadow:0px 1px 0px #DAD0D0;*/
+    }
+    
+    .onlyps-right{
+        position: absolute;
+        right:30px;
+        font-size: 12px;
+    }
+    
+    .onelinerightps{
+        position: relative;
+        right:55px;
+        bottom: 35px;
+    }
+    .my-bottom-counter{
+        position: relative;
+        top:1px;
+        right: 28px;
+    }
+    .no-visible{
+        visibility: hidden;
+    }
+    .roundphoto{
+        border: none;
+        background-color: #fff;
+    }
+    .floatleft{
+        float:left;
+    }
+    .floatright{
+        float:right;
+    }
+    .floatleft img{
+        margin-left: 8px;
+    }
+    .ui-bottom-bar{
+        height: 52px;
+        background-color: #fff;
+    }
+    .choose{
+        color: #16CEE6;
+    }
+    .LoginCheckAccount input{
+       background: url("images/input_icon_id.jpg") no-repeat  ;
+       background-position: 10px 10px;
+    }
+    .LoginCheckPassword input{
+        background: url("images/input_icon_pw.jpg") no-repeat  ;
+       background-position: 10px 10px;
+    }
+
+    .titilesearch input::-moz-placeholder{
+        
+        text-align: center;  
+          background: url("images/icon_search.jpg") no-repeat  ;
+        background-position: 40%;  
+
+    }
+    .titilesearch input::-webkit-input-placeholder{
+        text-align: center;  
+        background: url("images/icon_search.jpg") no-repeat  ;
+        /*background-position: 135px;  */
+        background-position: 40%;
+    }
+    .friendsearch input::-moz-placeholder{
+        
+        text-align: center;  
+          background: url("images/icon_search.jpg") no-repeat  ;
+        background-position: 40%;  
+
+    }
+     .friendsearch input::-webkit-input-placeholder{
+        text-align: center;  
+        background: url("images/icon_search.jpg") no-repeat  ;
+        /*background-position: 135px;  */
+        background-position: 40%;
+    }
+    
+
+    .titilesearch input{
+      
+    }
+    .grey{
+    background-color: rgba(236, 236, 236, 1);
+}
+.ui-bottom-bar input {
+    margin-right: 255px;
+}
+.ui-bottom-bar button{
+    padding:3px 10px 3px 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #16CEE6;
+
+}
+.ui-bottom-bar button.sendmsgbutton{
+    background-color: #16CEE6;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+.ui-page-content{
+   
+    margin-top:55px;
+    margin-bottom: 50px;
+    /*overflow-y:hidden;*/
+}
+.chatunit{
+
+}
+.orange{
+    color: orange;
+}
+.green{
+    color:green;
+}
+
+.chat-left{
+    margin-right: 40%;
+    margin-left: 3%
+}
+
+.chat-right{    
+    margin-left: 40%;    
+}
+
+.title-left{
+  /*  margin-top: 7px;*/
+}
+.title-left-icon{
+    font-size: 29px;
+    color: #fff;   
+}
+
+.title-left-p{
+    
+    font-size: 15px;
+    margin-left: 3px;
+    color: #fff;
+    position: relative;
+    bottom: 5px;
+}
+
+span.ion-mic-a.title-right-icon {
+  
+    font-size: 20px;
+    color: #FFF;
+    margin-top: 13px;
+    
+}
+span.ion-ios-videocam.title-right-icon {
+   
+    font-size: 20px;
+    color: #FFF;
+    margin-top: 13px;
+    margin-left: 13px;
+    margin-right: 20px;
+}
+.inline-block{
+    display: inline-block;
+}
+button.sendmsgbutton.ui-btn.ui-shadow.ui-corner-all{
+    background-color: #16CEE6;
+    color: #fff;
+}
+.infoposition{
+    text-align: center;
+    margin-top: 120px;
+    font-size: 15px;
+}
+.funcposition{
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.funcposition input{
+    background-color: blue;
+}
+.p-titletop{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+}
+.p-titlebottom{
+    color: #fff
+}
+.p-center-title{
+    display: inline-block;
+}
+.ui-top-bar button.ui-btn.ui-shadow.ui-corner-all {
+    position: absolute;
+    
+    margin-right: 1px;
+    width: 75px;
+    right: 10px;
+    top: 2px;
+    margin-top: 5px;
+    padding:5px 3px 5px 3px;
+}
+.position{
+    margin-right: 30px;
+}
+.remoteposition video{
+    width:100%;
+    border:2px sold #999999;
+   
+    position: absolute;
+    top:50px;
+    z-index: 99;
+
+
+}
+.localposition video{
+    width:20%;
+    /*z-index: 100;*/
+   
+    border:2px sold #999999;
+    position: absolute;
+    top: 50px;
+    right:0px;
+    z-index: 100;
+
+    
+}
+.no-bottom-border{
+    border-bottom-width: 0px;
+}
+a .title-tab-choose{
+    color:#16CEE6;
+}
+a .my-title-tab{
+    color:#FFF;
+}
+.blue{
+    background-color:#16CEE6;
+}
+.inlineblock{
+    display: inline-block;
+}
+.marginright{
+    margin-right:85px;
+}
+span.p_label{
+    margin-left: 10px;
+    color:rgba(116, 110, 110, 0.9);
+    display: block;
+    margin-top:69px;
+
+
+}
+.friendsearch .leftinput {
+  
+   display: inline-block;
+   float:left;
+   width:80%;
+   margin-top:10px;
+}
+/*.leftinput input{
+    padding-right: 100px;
+}*/
+.friendsearch .rightbutton{
+   display:inline-block;
+}
+.rightbutton button{
+    padding:5px;
+    margin-right:0px;
+}
+.title_left_icon{
+    font-size: 29px;
+    color: #FFF;
+    float: left;
+    margin-left: 5px;
+}
+.title_left_p{
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+.title_left_p_center{
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+    margin-top: 9px;
+    display: inline-block;
+    margin-left: -40px;
+}
+.left_image{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.left_p{
+    margin-left: 10px;
+    margin-top: -30px;
+    position: relative;
+ /*   bottom: 20px;*/
+    display: inline-block;
+}
+/*.left_button{
+    display: inline-block;
+    float: right;
+}*/
+.right_button{
+  	display: inline-block;
+	float: right;
+
+	width: 70px;
+	margin-bottom: -20px;
+	/*margin-top: 15px;*/
+    margin-right: 15px;
+}
+.right_button .confirm{
+    background-color: #30EAE0;
+    padding: 5px 10px;
+	font-size: 15px;
+	border-radius: 0.3em;
+}
+.right_button .cancel{
+	background-color: rgba(156, 137, 143, 0.09);
+	padding: 5px 10px;
+	font-size: 15px;
+	border-radius: 0.3em;
+}
+.right_p{
+    display: inline-block;
+    float: right;
+    margin-top: 23px;
+    margin-right: 15px;
+    color: rgba(72, 60, 60, 0.76);
+}
+.left_element{
+    display: inline-block;
+ 
+}
+</style>

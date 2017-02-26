@@ -1,0 +1,27 @@
+﻿/*
+------------------------------- 
+Site:        首页
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+
+
+/*=======广告=======*/
+.banner_box{width:100%; min-width:1020px; height:500px; text-align:center}
+.banner_img{width:100%; min-width:1020px; height:500px; }
+.banner_img a{width:980px; height:500px; margin:auto; display:block;}
+
+/*=======广告end=======*/
+
+
+
+/*=======功能介绍 =======*/
+.index_function_list{width:1020px; margin:auto; overflow:hidden;}
+.index_function_list li{width:230px; margin:0 5px 25px; float:left; overflow:hidden;}
+.index_function_list .h2_img{width:100px; height:100px; margin:40px auto 28px;}
+.index_function_list h2{font-size:24px; text-align:center;}
+.index_function_list p{width:240px; margin:12px auto 35px; font-size:16px; color:#666; text-align:center; line-height:24px;}
+.index_function_list .li_more{color:#00c7e4;}
+/*=======功能介绍 end=======*/
+

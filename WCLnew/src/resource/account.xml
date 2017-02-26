@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!--
+  - This file is included by the struts.xml file as an example
+  - of how to break up the configuration file into multiple files.
+-->
+<struts>
+  <package name="account" namespace="/" extends="default">
+   		<!-- login from the freeAccount,is responsible for controlling the login 
+			if success then redirect to the news if the account is someone who first 
+			login the website, then use rediectAction to redirect to "profile" with its 
+			own parameters; if the account belongs no team, then use rediectAction to 
+			redirect to "error/needteams" with its own parameters; -->
+		<action name="login"
+			class="com.free4lab.webrtc.action.account.LoginAction">
+			<result type="redirect">${redirect_url}</result>
+		</action>
+		
+	<!--  	<action name="secondlogin"
+			class="com.free4lab.webrtc.action.account.SecondloginAction">
+			<result type="redirect">${redirectUrl}</result>
+		</action>
+		
+		-->
+  </package>
+</struts>

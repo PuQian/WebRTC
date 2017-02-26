@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<!--
+  - This file is included by the struts.xml file as an example
+  - of how to break up the configuration file into multiple files.
+-->
+<struts>
+  <package name="platform" namespace="/platform" extends="default">
+   		<!-- login from the freeAccount,is responsible for controlling the login 
+			if success then redirect to the news if the account is someone who first 
+			login the website, then use rediectAction to redirect to "profile" with its 
+			own parameters; if the account belongs no team, then use rediectAction to 
+			redirect to "error/needteams" with its own parameters; -->
+		<!-- <action name="" class="">
+			<result>/basic/platform.jsp</result>
+		</action> -->
+		
+		<!-- 联系人的相关action-->
+		<!-- 添加联系人-->
+		<action name="addContact"  class="com.free4lab.webrtc.action.contact.AddContactAction">
+			<!--<result name="success">/basic/platform.jsp</result> -->
+			<result type="json"></result>
+		</action>
+		<!--添加联系人群组 -->
+		<action name="addGroup" class="com.free4lab.webrtc.action.contact.AddGroupAction">
+ 			<!-- <result name="success">/basic/platform.jsp</result> -->
+			<result type="json"></result>
+		</action>
+		<!-- 修改联系人 -->
+		<action name="updateContact" class="com.free4lab.webrtc.action.contact.ModifyContactAction">
+			<result type="json"></result>
+	 	</action>
+		<!-- 修改群组 -->
+		<action name="updateContactGrouplist"  class="com.free4lab.webrtc.action.contact.ModifyGroupAction">
+			<result type="json"></result>
+		</action>
+		
+		<!--删除联系人 -->
+		<action name="delContact" class="com.free4lab.webrtc.action.contact.DeleteContactAction">
+			<result type="json"></result>
+		</action>
+	 	<!-- 删除群组 -->
+	 	<action name="delContactGroup" class="com.free4lab.webrtc.action.contact.DeleteGroupAction">
+	 		<result type="json"></result>
+		</action>
+	
+		<!-- 获取通讯录 -->
+		<action name="getContactlist"  class="com.free4lab.webrtc.action.contact.ShowContactsInfoAction">
+			<result type="json"></result>
+		</action>
+		
+		<!-- 获取所有分组-->
+		<action name="getGrouplist" class="com.free4lab.webrtc.action.contact.GetGrouplistAction">
+			<result  type="json"></result>
+		</action>
+		
+		<!--分组获得联系人 -->
+		<action name="getContactlistByGroup"  class="com.free4lab.webrtc.action.contact.GetContactByGroupAction">
+			<result  type="json"></result>
+		</action>
+		
+		<!--根据id获得联系人信息-->
+		<action name="getOneContactInfo"  class="com.free4lab.webrtc.action.contact.GetContactByIdAction">
+			<result  type="json"></result>
+		</action>
+		
+  </package>
+</struts>

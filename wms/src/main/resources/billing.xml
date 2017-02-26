@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <package name="api/biling" namespace="/api/billing" extends="default">
+	    <!-- 【接口】转账API -->
+        <action name="pay" class="com.free4lab.account.api.action.billing.AddBillingHistoryAction">
+        	<result name="success" type="json"></result>
+        </action>
+		<!-- 【接口】查询余额API -->
+        <action name="balance" class="com.free4lab.account.api.action.billing.GetBalanceAction">
+            <result name="success" type="json"></result>
+        </action>
+        <!-- 【接口】充值API -->
+        <action name="recharge" class="com.free4lab.account.api.action.billing.RechargeBalanceAction">
+        	<result name="success" type="json"></result>
+        </action>
+        <!-- 【接口】查看交易记录 -->
+        <action name="records_page" class="com.free4lab.account.api.action.billing.GetBillingHistoryAction">
+        	<result type="json"></result>
+        </action> 
+		<!-- 【接口】通过email查询用户余额API -->
+        <action name="balances_page" class="com.free4lab.account.api.action.billing.GetBalancesByEmailAction">
+            <result name="success" type="json"></result>
+        </action>
+		
+    </package>
+</struts>

@@ -1,0 +1,47 @@
+/*
+------------------------------- 
+Site:        ��Ƶ���?��ʷ��¼
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+
+
+/*=======�б� =======*/
+.list_table{width:100%; height:515px; margin:0px 0px; overflow:auto;}
+.list_table2{width:550px; height:445px; margin:20px auto 0; overflow:hidden;}
+.list_table table{width:100%;border-collapse: collapse; table-layout:fixed;}
+.list_table table th{height:40px; background:#ecf1f3; border:none; font-size:14px; color:#999; font-weight:100; text-align:left;}
+.list_table table td{text-overflow:ellipsis; white-space: nowrap; overflow:hidden; padding-top:12px; padding-bottom:8px;border:none; border-bottom:1px solid #ecf1f3;font-size:14px; line-height:150%;}
+
+.list_table .fblue,.list_table2 .fblue,{color:#479ecf;}
+/*========�б� end =======*/
+
+/*=======��Ϣ���� �� ���Ѻ�ʱ���б�=======*/
+.box_friend_list{width:200px; height:515px; overflow:auto; float:left;background:#ecf1f3;}
+.box_friend_list ul{width:100%;}
+.box_friend_list li{ height:40px; padding-right:15px; line-height:40px; cursor:pointer;}
+.box_friend_list .li_name{width:100px; margin-left:20px; float:left; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; font-size:14px; color:#333;}
+.box_friend_list .li_time{width:45px; float:right; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; font-size:12px; color:#999; text-align:right;}
+.box_friend_list li.on,
+.box_friend_list li:hover{background:#fafafa;}
+.box_friend_list li.on .li_name{color:#49c;}
+.box_friend_list .li_name2{width:70px;}
+.box_friend_list .li_time2{width:80px;}
+/*=======��Ϣ���� �� ���Ѻ�ʱ���б�end =======*/
+
+/*=======��Ϣ���� �� �������ҶԻ��б��б�=======*/
+.box_dialogue_list{width:409px; height:515px; float:right;}
+.box_dialogue_list .dialogue_list{width:100%; height:515px; overflow:auto;}
+.box_dialogue_list .dialogue_list li{margin:5px 8px 0; padding:5px 0; border:1px solid #fafafa; cursor:pointer;}
+.box_dialogue_list .dialogue_list li h3{padding-left:10px; overflow:hidden; white-space:nowrap;text-overflow:ellipsis;font-size:14px; line-height:26px; font-weight:100; color:#2fc800;}
+.box_dialogue_list .dialogue_list li h3.you_name{color:#4499cc;}
+.box_dialogue_list .dialogue_list li p{margin:0; padding:0 35px; font-size:14px; color:#333; line-height:150%;}
+.box_dialogue_list .dialogue_list li.on{background:#ecf6fb; border:1px solid #c4e1f1;}
+.box_dialogue_list .box_dialogue_date{height:26px; margin:20px 10px 10px;padding-left:10px;border-bottom:1px solid #999; font-size:18px; color:#df1f20;}/*---ʱ��ָ�--*/
+/*----------mx--------------*/
+.box_dialogue_list .dialogue_list li:hover{background:#ecf6fb; border:1px solid #c4e1f1;}
+
+.box_dialogue_list .bottom_operation{width:410px;}/*---���ҵײ������� ��������--*/
+.box_dialogue_list .bottom_operation_l{width:100px; padding-left:10px;}
+/*=======��Ϣ���� �� �������ҶԻ��б��б� end=======*/

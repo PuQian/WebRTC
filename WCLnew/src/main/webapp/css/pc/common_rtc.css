@@ -1,0 +1,293 @@
+/*
+------------------------------- 
+Site:        业务主界面的公用类 包括头部、脚部。
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+
+
+body{background:#97a2a7; }
+.rtc_box{width:1100px; height:630px; padding:80px 0 0; margin:0 auto 0; /*overflow:hidden; */background:#fafafa; -moz-border-radius: 0 0 6px 6px;   -webkit-border-radius: 0 0 6px 6px;  border-radius:0 0 6px 6px;
+box-shadow:0 0 18px #79858c;}
+.bg_gray{background:#f9f9f9;}
+.none_line{border:none!important;}
+
+
+
+/*=======头部=======*/
+.rtc_head_box{width:100%; min-width:1100px; height:86px; position:absolute; z-index:100;background:#fff;box-shadow:2px 2px 3px #aaaaaa;}
+
+.rtc_head{width:1100px; margin:0 auto;}
+ /*--------头部 左 用户信息------*/
+.rtc_head .user_info{width:515px; float:left; margin:10px 0 0 20px; overflow:hidden;}
+.rtc_head .user_info .portrait{width:65px; height:65px;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%; overflow:hidden; float:left;}
+.rtc_head .user_info .user_name{padding:0 3px 0 10px; float:left; display:inline-block;font-size:24px;line-height:65px; font-weight:100;}/*---用户名称--*/
+.rtc_head .user_info .user_role{width:14px; height:18px; margin:22px 4px 0 0; float:left; display:inline-block; overflow:hidden; background:url(images/rtc_user_role.png) no-repeat; line-height:80px;}/*---用户身份，权限--*/
+.rtc_head .user_info .head_tips{height:38px; margin-top:14px; margin-left:30px; float:left; overflow:hidden; display:inline-block;}/*---未读提醒--*/
+.rtc_head .user_info .head_tips li{width:38px; height:38px; margin-right:5px; float:left; position:relative;}
+.rtc_head .user_info .head_tips i.num{width:16px; height:16px; -moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;display:block; position:absolute; top:0px; right:0px; background:#F00; text-align:center; color:#fff; font-size:8px; font-family:Tahoma, Geneva, sans-serif; font-style:normal;}
+  /*--------头部 左 用户信息  end------*/
+
+ /*--------头部 右 操作-------*/
+.rtc_head .rtc_head_right{width:285px; height:40px; margin-top:30px; float:right;}
+.rtc_head .rtc_head_right li{width:4em; height:23px; padding-left:30px; float:left; font-size:12px; line-height:22px;}
+.rtc_head .rtc_head_right .head_help{background:url(images/rtc_head_icon_help.png) no-repeat;}
+.rtc_head .rtc_head_right .head_exit{background:url(images/rtc_head_icon_exit.png) no-repeat;}
+.rtc_head .rtc_head_right .head_enterprise{margin:0 25px; background:url(images/rtc_head_icon_enterprise.png) no-repeat;}/*--企业管理--*/
+.rtc_head .rtc_head_right .head_business{margin:0 25px;  background:url(images/rtc_head_icon_business.png) no-repeat;}/*--返回业务主页--*/
+.rtc_head .rtc_head_right a{color:#479ecf; }
+ /*--------头部 右 操作 end-------*/
+
+ /*-----*/
+/*=======头部 end=======*/
+
+
+/*=======脚部=======*/
+.rtc_foot_box{width:100%; min-width:1020px; height:100px; overflow:hidden; }
+.foot{width:1020px; margin:0 auto 0; padding:30px 0 0; text-align:center; font-size:14px; color:#fff; line-height:180%;}
+/*=======脚部 end=======*/
+
+
+/*=======主体 左=======*/
+.rtc_box_left{width:210px; height:630px; float:left; background:#4196ca;}
+ /*--------左侧 主菜单-------*/
+
+.rtc_menu{width:210px; height:329px; padding-top:8px;border-bottom:1px solid #418fba;}
+.rtc_menu li{width:100%; height:65px; border-bottom:1px solid #418fba; cursor:pointer;
+
+filter:alpha(opacity=70);
+	-moz-opacity:0.75;
+	-khtml-opacity: 0.7;
+	opacity: 0.7;}
+.rtc_menu li i{width:50px; height:50px; margin:8px 10px 0 28px; display:block; float:left;}
+.rtc_menu li a{line-height:65px; color:#fff; font-size:18px;}
+
+.rtc_menu li:hover,
+.rtc_menu li.on{filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity:1;
+	background:#3e8bb8; border-bottom:1px solid #3980a6;}
+ /*-------左侧 主菜单 end-------*/
+
+ /*--------左侧 最近通话 列表 -------*/
+.recent_calls{width:100%;height:292px;overflow-y:auto;overflow-x:hidden;}
+.recent_calls h2{padding-left:30px;font-size:14px; color:#fff; line-height:44px; font-weight:100;}
+.recent_calls li{width:210px; height:44px; cursor:pointer;position:relative;}
+.recent_calls .list_portrait{width:30px; height:30px; margin:7px 10px 0 30px; float:left; overflow:hidden;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;}
+ .recent_calls .list_portrait img{width:30px; height:30px;}
+ .recent_calls li a{width:115px; height:44px; display:block; float:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:44px; color:#fff; font-size:14px;}
+ .recent_calls li.on, .recent_calls li:hover{background:#3e8bb8;}
+
+ /*add by yck*/
+ .recent_calls li i.num{width:16px; height:16px; -moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;display:block; position:absolute; top:14px; right:10px; background:#F00; text-align:center; color:#fff; font-size:8px; font-family:Tahoma, Geneva, sans-serif; font-style:normal;}
+ 
+ /*--------左侧 最近通话 列表 end-------*/
+
+
+/*=======主体 左 end=======*/
+
+
+/*=======主体 中=======*/
+.rtc_box_center{width:609px; float:left; }
+.rtc_box_center2{width:885px; float:left; }/*---企业管理主界面 右侧---*/
+/*=======主体 中 end=======*/
+
+
+/*=======主体 右=======*/
+.rtc_box_right{width:280px; height:630px; float:right; background:#ecf1f3; border-left:1px solid #d9e3e7;}
+ /*--------右侧 上 搜索框 -------*/
+.rtc_box_right .friend_search{width:260px; height:30px; margin:23px auto 18px; border:1px solid #bad1de; background:#fff; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px;}
+.rtc_box_right .friend_search .search_tips{width:30px; height:16px; margin:8px auto 0; padding-left:20px; display:block; background:url(images/search_icon.png) no-repeat; font-size:12px; color:#ccc; line-height:16px;}
+/*add by pq*/
+.rtc_box_right .friend_search_input{width:240px; height:30px; margin:23px 18px 23px 18px; font-size:13px; text-align:center; color:#ccc; border:1px solid #bad1de; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; background:url(images/search_icon.png) 80px no-repeat #fff; }
+ /*--------右侧 上 搜索框 end-------*/
+ 
+  /*--------右侧 上 正在搜索 -------*/
+.rtc_box_right .friend_search .search_input{width:220px; height:30px; margin:0 5px;float:left;  border:0; font-size:12px; color:#333; line-height:30px;}
+
+.rtc_box_right .friend_search .search_clear{width:17px; height:17px; margin:6px 6px 0 0; float:right; overflow:hidden; background:url(images/search_close.png) no-repeat; line-height:60px;text-indent:999em;}
+.rtc_box_right .friend_search .search_clear:hover{background-position:0 -17px;}
+ /*--------右侧 上 正在搜索 end-------*/
+
+ /*--------右侧 通讯录标签-------*/
+.rtc_box_right .friend_tab{height:62px; background:#f4f7f8; border-top:1px solid #d9e3e7;}
+.rtc_box_right .friend_tab ul{margin:0;}
+.rtc_box_right .friend_tab li{height:60px; float:left; border-bottom:2px solid #d9e3e7; cursor:pointer;}
+.rtc_box_right .friend_tab li:hover,
+.rtc_box_right .friend_tab li.on{background:#fff; border-bottom:2px solid #49c; }
+.rtc_box_right .friend_tab li a{width:100%; height:20px; margin:0 auto; display:block; color:#666; text-align:center;}
+.rtc_box_right .friend_tab i{width:40px; height:40px; margin:3px auto 0; display:block; background-image:url(images/rtc_right_tab.png); background-repeat:no-repeat;}
+.rtc_box_right .friend_tab i.tab_li1{ background-position:0 0;}
+.rtc_box_right .friend_tab i.tab_li2{ background-position:0 -80px;}
+.rtc_box_right .friend_tab i.tab_li3{ background-position:0 -160px;}
+.rtc_box_right .friend_tab i.tab_li4{ background-position:0 -240px;}
+
+.rtc_box_right .friend_tab li.on i.tab_li1{ background-position:0 -40px;}
+.rtc_box_right .friend_tab li.on i.tab_li2{ background-position:0 -120px;}
+.rtc_box_right .friend_tab li.on i.tab_li3{ background-position:0 -200px;}
+.rtc_box_right .friend_tab li.on i.tab_li4{ background-position:0 -280px;}
+
+.rtc_box_right .friend_tab ul.tab3 li{width:93px;}/*----tab ���----*/
+.rtc_box_right .friend_tab ul.tab4 li{width:70px;}/*----tab 4��----*/
+ /*--------右侧 通讯录标签 end-------*/
+
+
+
+
+ /*--------右侧 好友列表 -------*/
+.friend_list_box{width:280px; height:443px; padding-top:10px; overflow:auto;} 
+.friend_h2{width:100%; height:30px; position:relative; text-indent:30px; font-size:14px; font-weight:100; line-height:30px; cursor:pointer;}/*----�������---*/
+.friend_h2 i{width:14px; height:14px; position:absolute; top:8px; left:12px; background-image:url(images/rtc_right_arrow.png);}
+.friend_h2 i.ul_open{background-position:0 -14px;}
+.friend_h2 .num{margin-left:5px;font-size:12px; color:#999;}
+
+.friend_list ul{} /*----好友列表---*/
+.friend_list li{width:100%; height:60px; cursor:pointer;}
+.friend_list .list_portrait{width:38px; height:38px; margin:10px 10px 0 30px; float:left; overflow:hidden;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;}
+ .friend_list .list_portrait img{width:38px; height:38px;}
+ .friend_list .friend_name{width:165px; height:55px; display:block; float:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:58px; color:#333; font-size:16px;}
+   .friend_list .friend_name i{margin-left:5px;font-size:12px; color:#999; font-style:normal;}
+ .friend_list li:hover{background:#ddd;}
+ /*--------右侧 好友列表 end -------*/
+
+
+ /*--------右侧 好友列表 空-------*/
+.friend_list_none{width:200px; height:200px; margin:80px auto 0; text-align:center; font-size:12px; color:#999; line-height:200%; }
+.friend_list_none a{width:100px;  margin:20px auto; }
+
+ /*--------右侧 好友列表 空 end-------*/
+ 
+/*--------右侧 搜索结果 列表  -------*/
+.friend_search_list_box{width:280px; height:505px; padding-top:10px; overflow:auto;  border-top:1px solid #d9e3e7;} 
+
+.friend_search_list2{margin-bottom:8px; border-bottom:1px solid #d9e3e7;} /*----好友列表---*/
+.friend_search_list li{width:100%; height:60px; cursor:pointer; overflow:hidden; position:relative;}
+.friend_search_list .list_portrait{width:38px; height:38px; margin:10px 10px 0 30px; float:left; overflow:hidden;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;}
+.friend_search_list .list_portrait img{width:38px; height:38px;}
+.friend_search_list .list_text{width:165px; height:55px; margin-top:8px;float:left;overflow:hidden;}
+.friend_search_list .friend_name{width:100%; height:24px; display:block; white-space:nowrap;text-overflow:ellipsis;line-height:24px; color:#333; font-size:16px;}
+.friend_search_list .friend_name i{margin-left:5px;font-size:12px; color:#999; font-style:normal;}
+.friend_search_list .friend_info{width:100%; height:20px; display:block; white-space:nowrap;text-overflow:ellipsis;line-height:20px; color:#999; font-size:12tpx;}
+.friend_search_list .list_text strong{color:#f00;}
+.friend_search_list .list_more{width:14px; height:12px; display:none; overflow:hidden; position:absolute; top:25px; right:15px; background:url(images/rtc_right_arrow.png) no-repeat 0 -44px; line-height:50px;}
+
+.friend_search_list li:hover{background:#ddd;}
+.friend_search_list li:hover  .list_more{display:block;}
+.friend_search_list li:hover  .list_text{width:145px;}
+ /*--------右侧 搜索结果 列表  end -------*/
+
+ /*--------右侧 集团列表 -------*/
+ /*
+ * add by yck
+ */
+.group_list_box{width:280px; height:555px; padding-top:24px; padding-bottom:10px;overflow:auto;}/*一级分组*/ 
+
+.group_h2{width:100%; height:30px; position:relative; text-indent:42px; font-size:16px; font-weight:100; line-height:30px; cursor:pointer;}/*----�������---*/
+.group_h2:hover{background-color:#ddd;}/*一、二级分组选中状态*/ 
+.group_h2.on{background-color:#ddd;}
+
+.group_h2 i{width:14px; height:14px; position:absolute; top:8px; left:25px; background-image:url(images/rtc_right_arrow.png);}
+.group_h2 i.ul_open{background-position:0 -14px;}
+.group_h2 .num{margin-left:5px;font-size:12px; color:#999;}
+
+.group_list{} /*----�����б�---*//*三级分组,删了底边距*/ 
+.group_list li{width:100%; height:28px; cursor:pointer; background:url(images/group_list.png) no-repeat 45px center; text-indent:65px; font-size:14px; line-height:28px;}
+
+.group_list li:hover{background-color:#ddd;}
+.group_list li.on{background-color:#ddd;}
+ /*--------右侧 集团列表 end -------*/
+ 
+ /*--------右侧 下 的操作 -------*/
+.group_operation{width:100%;height:40px; clear:both; overflow:hidden; border-top:1px solid #d9e3e7;line-height:40px; color:#489fcf; font-size:14px; text-align:center;}
+.group_operation a{padding:0 5px; color:#489fcf; }
+ /*--------右侧 下 的操作 end-------*/
+ 
+  /*--------右侧 点击好友列表弹出菜单 -------*/
+.friend_pop_operation{width:130px; margin:10px; padding:4px 0;  background:#fff;  border-radius:4px; box-shadow:2px 2px 30px #d2d6d7;}
+.pop_width2{width:165px;}
+.friend_pop_operation li{padding:0 12px; overflow:hidden; white-space:nowrap;text-overflow:ellipsis;font-size:14px; line-height:22px; cursor:pointer;}
+.friend_pop_operation li:hover{background:#49c; color:#fff;}
+.friend_pop_operation li.li_sub{margin:2px 0; height:22px;  padding-top:2px; overflow:inherit; position:relative; border-top:1px solid #e8ebed; border-bottom:1px solid #e8ebed;}
+.friend_pop_operation li i{width:14px; height:14px; display:block; position:absolute; right:5px; top:4px; background:url(images/rtc_right_arrow.png) no-repeat;}
+
+.friend_pop_operation .li_sub:hover i{background-position:0 -28px;}
+.friend_pop_operation .subul{width:110px;margin:10px; padding:4px 0; display:none; position:absolute; top:-15px; left:94%; background:#fff; border-radius:4px; box-shadow:2px 2px 30px #d2d6d7;}
+.friend_pop_operation .li_sub:hover .subul{display:block;}
+.friend_pop_operation .subul li{color:#333;}
+.friend_pop_operation .subul li:hover{color:#fff;}
+ /*--------右侧 点击好友列表弹出菜单 end-------*/
+
+ 
+/*=======主体 右 end=======*/
+
+
+
+/*=======公用按钮=======*/
+.btn_blue{height:30px; display:block;border:1px solid #bad1de; background:#ecf6fb; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:14px; line-height:30px; color:#3383c1; cursor:pointer; text-align:center;}/*----ǳ��ɫ���߰�ť---*/
+.btn_blue:hover{background:#d6f0fd;}
+
+.btn_blue2{height:30px; display:block;border:1px solid #bad1de; background:#fff; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:14px; line-height:30px; color:#333; cursor:pointer; text-align:center;}/*----ǳ��ɫ����  �ױ��� ��ť---*/
+.btn_blue2:hover{background:#ecf6fb;}
+
+.btn_red{height:30px; display:block;border:1px solid #fbc4a7; background:#ffefe4; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px; font-size:14px; line-height:30px; color:#ff4242; cursor:pointer; text-align:center;}/*----ǳ��ɫ����  �ױ��� ��ť---*/
+.btn_red:hover{background:#f9dfcd;}
+
+/*=======公用按钮end=======*/
+
+
+
+/*=======标签=======*/
+.rtc_tab{width:100%; height:73px; overflow:hidden; border-bottom:1px solid #d9e3e7;}
+.rtc_tab ul{}
+.rtc_tab li{height:71px; padding:0 10px; margin:0 0 0 20px; overflow:hidden; float:left; font-size:18px; line-height:80px; cursor:pointer;}
+.rtc_tab li.on,
+.rtc_tab li:hover{ border-bottom:2px solid #4499cc; color:#49c;}
+
+.rtc_tab h2{height:71px; padding-left:28px; overflow:hidden; float:left; font-size:18px; line-height:80px;color:#49c; font-weight:100;}
+.rtc_tab .rtc_tab_search{width:180px; height:30px; margin:25px 10px 0 0; float:right; border:1px solid #bad1de; background:#fff; -moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px;}
+.rtc_tab .rtc_tab_search .search_input{width:150px; height:30px;float:left;border:none;font-size:12px; text-align:center;line-height:16px;color:#ccc;-moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px;}
+.rtc_tab .rtc_tab_search .search_tips{width:23px; height:16px; display:block;margin-top:8px;float:right;background:url(images/search_icon.png) no-repeat; color:#ccc; line-height:16px;-moz-border-radius: 4px;   -webkit-border-radius: 4px;  border-radius:4px;}
+/*=======标签 end=======*/
+
+
+/*===========翻页=============*/
+.pagedown{width:100%;padding:30px 0 0; clear:both; text-align: center;}
+.pagedown a{width:28px; height:28px; margin-left:4px; display:inline-block; background:#fff; border:1px solid #bad1de; border-radius:2px;text-align:center; line-height:30px; font-size:14px; color:#666;}
+.pagedown a:hover,
+.pagedown a.on{ color:#fff; background:#479ecf; border:1px solid #479ecf; font-weight:bold; text-decoration:none;}
+.pagedown .pageup,
+.pagedown .pagenext{width:70px; margin:0 10px;}
+/*===========翻页 end=============*/
+
+/*===========中间 底部操作和翻页=============*/
+.bottom_operation{width:609px;height:40px; clear:both; overflow:hidden; border-top:1px solid #d9e3e7;}
+.bottom_operation_l{width:200px; height:40px; padding-left:25px; float:left; line-height:40px; color:#489fcf; font-size:14px;}
+.bottom_operation_l a{padding:0 10px; color:#489fcf;}
+.bottom_operation_r{width:190px; height:40px;padding-left:35px; float:right; overflow:hidden;color:#666; font-size:12px;}
+.bottom_operation_r span{height:22px; margin:10px 2px 0; overflow:hidden; display:block; float:left; line-height:22px;}
+.bottom_operation_r .page_first,
+.bottom_operation_r .page_up,
+.bottom_operation_r .page_next,
+.bottom_operation_r .page_end{width:16px; height:16px; margin:12px 2px 0; overflow:hidden; background-image:url(images/pagedown_arrow.png); line-height:100px; cursor:pointer; }
+
+.bottom_operation_r .page_first:hover{background-position:0 -64px;}
+.bottom_operation_r .page_up{background-position:0 -16px;}
+.bottom_operation_r .page_up:hover{background-position:0 -80px;}
+.bottom_operation_r .page_next{background-position:0 -32px;}
+.bottom_operation_r .page_next:hover{background-position:0 -96px;}
+.bottom_operation_r .page_end{background-position:0 -48px;}
+.bottom_operation_r .page_end:hover{background-position:0 -112px;}
+
+.bottom_operation_r .input_num{width:30px; height:20px;  border:1px solid #bad1de; text-align:center; color:#666;}/*---��������--*/
+
+
+
+/*==========中间 底部操作和翻页 end=============*/

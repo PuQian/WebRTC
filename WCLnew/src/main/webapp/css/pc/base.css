@@ -1,0 +1,195 @@
+/*
+------------------------------- 
+Site:        原子类 所有页面通用的样式，请不要修改里边的属性及数值。
+Author:       xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+/*=======CSS reset start=======*/
+body{background:#fff;}
+.bg_fff{background:#fff;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0; font-size:12px;}
+table{border-collapse:collapse; border-spacing:0; font-family:"宋体";}
+fieldset,img{border:none;}
+address,caption,cite,code,dfn,em,,var{font-style:normal; font-weight:normal;}
+ol,ul,li{list-style-type :none;}
+caption{text-align:left;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;}
+a{text-decoration:none; color:#333;}
+/*=======CSS reset end=======*/
+
+/*=======文字排版 start======*/
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px!important;}
+.f15{font-size:15px!important;}
+.f16{font-size:16px!important;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+
+.fb{font-weight:bold;}
+.fn{font-weight:normal;}
+.t2{text-indent:2em;}
+.lh150{line-height:150%;}
+.lh180{line-height:180%;}
+.lh200{line-height:200%;}
+
+.unl{text-decoration:underline;}
+.no_unl{text-decoration:none;}
+/*=======文字排版 end======*/
+
+
+/*===========文字颜色==========*/
+.fwhite{color:#fff}
+.fBlue{color:#00c7e4;}
+.fred{color:red;}
+.f333{color:#333;}
+.f666{color:#666;}
+.f999{color:#999;}
+.fccc{color:#ccc;}
+.f900{color:#900;}
+.ff00{color:#f00;}
+/*===========文字颜色 end==========*/
+
+/*=======定位 start======*/
+.tl{text-align:left!important;}
+.tc{text-align:center!important;}
+.tr{text-align:right!important;}
+.tborder{ color:#f9bb5b}
+.bc{margin-left:auto; margin-right:auto;}
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+.cb{clear:both;}
+.cl{clear:left;}
+.cr{clear:right;}
+.clearfix:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}.clearfix{display:inline-block;}* html .clearfix{height:1%;}.Clearfix{display:block;}
+.vm{vertical-align:middle;}
+.vt{vertical-align:top;}
+.pr{position:relative;}
+.pa{position:absolute;}
+.abs-right{position:absolute; right:0;}
+.zoom{zoom:1;}
+.hidden{visibility:hidden;}
+.none{display:none;}
+/*=======定位 end======*/
+
+/*=======长度高度 start======*/
+.w{width:100%;}
+.w10{width:10px!important;}
+.w20{width:20px!important;}
+.w30{width:30px!important;}
+.w40{width:40px!important;}
+.w50{width:50px!important;}
+.w60{width:60px!important;}
+.w70{width:70px!important;}
+.w80{width:80px!important;}
+.w90{width:90px!important;}
+.w100{width:100px!important;}
+.w110{width:110px!important;}
+.w120{width:120px!important;}
+.w125{width:125px!important;}
+.w150{width:150px!important;}
+.w180{width:180px!important;}
+.w200{width:200px!important;}
+.w210{width:210px!important;}
+.w250{width:250px!important;}
+.w265{width:265px!important;}
+.w300{width:300px!important;}
+.w350{width:350px!important;}
+.w400{width:400px!important;}
+.w450{width:450px!important;}
+.w500{width:500px!important;}
+.w550{width:550px!important;}
+.w600{width:600px!important;}
+.w650{width:650px!important;}
+.w700{width:700px!important;}
+.w800{width:800px!important;}
+.w850{width:850px!important;}
+.w{width:100%;}
+
+.h20{height:20px!important;}
+.h30{height:30px!important;}
+.h40{height:40px!important;}
+.h50{height:50px!important;}
+.h60{height:60px!important;}
+.h70{height:70px!important;}
+.h80{height:80px!important;}
+.h100{height:100px!important;}
+.h200{height:200px!important;}
+.h300{height:300px!important;}
+.h400{height:400px!important;}
+.h500{height:500px!important;}
+.h600{height:600px!important;}
+.h{height:100%;}
+/*=======长度高度 end======*/
+
+/*=======边距 start======*/
+.ma{margin-left:auto; margin-right:auto;}
+.m10{margin:10px;}
+.m15{margin:15px;}
+.m30{margin:30px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt50{margin-top:50px;}
+.mt60{margin-top:60px;}
+.mt90{margin-top:90px;}
+.mt100{margin-top:100px;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb20{margin-bottom:20px;}
+.mb30{margin-bottom:30px;}
+.mb50{margin-bottom:50px;}
+.mb60{margin-bottom:60px;}
+.mb100{margin-bottom:100px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml30{margin-left:30px;}
+.ml40{margin-left:40px;}
+.ml50{margin-left:50px;}
+.ml60{margin-left:60px;}
+.ml100{margin-left:100px;}
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr20{margin-right:20px;}
+.mr30{margin-right:30px;}
+.mr50{margin-right:50px;}
+.mr100{margin-right:100px;}
+.mlr5{ margin:0 5px;}
+
+.p5{padding:5px!important;}
+.p10{padding:10px!important;}
+.p15{padding:15px!important;}
+.p30{padding:30px!important;}
+.pt5{padding-top:5px!important;}
+.pt10{padding-top:10px!important;}
+.pt20{padding-top:20px!important;}
+.pt30{padding-top:30px!important;}
+.pt50{padding-top:50px;}
+.pt60{padding-top:60px;}
+.pt100{padding-top:100px;}
+.pb5{padding-bottom:5px!important;}
+.pb10{padding-bottom:10px!important;}
+.pb20{padding-bottom:20px!important;}
+.pb30{padding-bottom:30px!important;}
+.pb50{padding-bottom:50px!important;}
+.pb100{padding-bottom:100px;}
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl20{padding-left:20px;}
+.pl30{padding-left:30px;}
+.pl50{padding-left:50px;}
+.pl100{padding-left:100px;}
+.pr5{padding-right:5px;}
+.pr10{padding-right:10px;}
+.pr20{padding-right:20px;}
+.pr30{padding-right:30px;}
+.pr50{padding-right:50px;}
+.pr100{padding-right:100px;}
+/*=======边距 end======*/
+

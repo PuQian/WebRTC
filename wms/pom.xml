@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.free4lab.account</groupId>
+    <artifactId>freeaccount</artifactId>
+    <version>0.4.1</version>
+    <packaging>war</packaging>
+    <name>account3.0_wms_v1</name>
+	<description>Search for account2.0</description>
+   
+	<dependencies>
+		<dependency>
+			<groupId>com.free4lab.account</groupId>
+			<artifactId>common-account</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>6.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.8.2</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20090211</version>
+		</dependency>
+		<!-- struts -->
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>2.1.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-config-browser-plugin</artifactId>
+			<version>2.1.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-dojo-plugin</artifactId>
+			<version>2.1.8.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-json-plugin</artifactId>
+			<version>2.1.8.1</version>
+		</dependency>
+		<!-- struts -->
+
+		<!-- spring filter -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring</artifactId>
+			<version>2.5.6</version>
+		</dependency>
+		<!-- spring -->
+
+		<!-- servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		<dependency>
+			<groupId>org.perf4j</groupId>
+			<artifactId>perf4j</artifactId>
+			<version>0.9.16</version>
+		</dependency>
+		<!-- Using AspectJ Load-Time Weaving to Integrate Timing Aspects at Run 
+			Time -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-jexl</groupId>
+			<artifactId>commons-jexl</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<!-- <dependency>
+			<groupId>com.free4lab.lol</groupId>
+			<artifactId>lol-core</artifactId>
+			<version>0.4.0-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>tomcat</groupId>
+					<artifactId>jasper-runtime</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>tomcat</groupId>
+					<artifactId>jasper-compiler</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>jsp-2.1</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>jsp-api-2.1</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>jetty</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>jetty-util</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.mortbay.jetty</groupId>
+					<artifactId>servlet-api-2.5</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jersey</groupId>
+					<artifactId>jersey-core</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jersey</groupId>
+					<artifactId>jersey-json</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jersey</groupId>
+					<artifactId>jersey-server</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency> -->
+		<dependency>      
+          	<groupId>org.eclipse.jetty</groupId>        
+          	<artifactId>jetty-servlets</artifactId>        
+          	<version>7.3.0.v20110203</version>    
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+					<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.7.2</version>
+				<configuration>
+					<skip>true</skip> <!-- skip test step -->
+					<forkMode>never</forkMode>
+					<excludes>
+						<exclude>**/Abstract*</exclude>
+						<exclude>**/TestUtil*</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.4</version>
+				<executions>
+					<!-- <execution>
+						<id>copy</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.aspectj</groupId>
+									<artifactId>aspectjweaver</artifactId>
+									<version>1.6.1</version>
+									<outputDirectory>${project.build.directory}</outputDirectory>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution> -->
+				</executions>
+			</plugin>
+		<!-- 	enforce dev environment -->
+			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>enforce-versions</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>2.2.1</version>
+								</requireMavenVersion>
+								<requireJavaVersion>
+									<version>1.5</version>
+								</requireJavaVersion>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- compiler -->
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>1.5</source>
+					<target>1.5</target>
+					<debug>true</debug>
+					<optimize>true</optimize>
+					<showDeprecations>true</showDeprecations>
+				</configuration>
+			</plugin>
+			<!-- build the ***-sources.jar -->
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<id>attach-source</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<attach>true</attach>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>        
+			    <groupId>org.mortbay.jetty</groupId>        
+			    <artifactId>jetty-maven-plugin</artifactId>        
+			    <version>7.3.0.v20110203</version>        
+			     <configuration>            
+			           <scanIntervalSeconds>10</scanIntervalSeconds>                    
+			            <webDefaultXml>src/resource/webdefault.xml</webDefaultXml>        
+			     </configuration>    
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>   
+				<configuration>
+					<warSourceExcludes>freefront/css/index.css,freefront/css/layout.css,freefront/css/plugin.css,freefront/css/public.css,freefront/css/reset.css,freefront/js/plugin/*.js,freefront/js/*.js,js/*.js</warSourceExcludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.samaxes.maven</groupId>
+				<artifactId>minify-maven-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+						<id>default-minify</id>
+						<phase>process-resources</phase>
+						<configuration>
+							<charset>utf-8</charset>
+							<skipMerge>true</skipMerge>
+							<nosuffix>true</nosuffix>
+							<jsSourceDir>js</jsSourceDir>
+							<jsSourceFiles>
+								<jsSourceFile>login.js</jsSourceFile>
+								<jsSourceFile>md5.js</jsSourceFile>
+								<jsSourceFile>pwdchange.js</jsSourceFile>
+								<jsSourceFile>pwdretrieve.js</jsSourceFile>
+								<jsSourceFile>pwdretrievenewpwd.js</jsSourceFile>
+								<jsSourceFile>register.js</jsSourceFile>
+								<jsSourceFile>regsuccess.js</jsSourceFile>
+								<jsSourceFile>jquery.mobile-1.2.1.min.js</jsSourceFile>
+								<jsSourceFile>jquery.form.js</jsSourceFile>
+								<jsSourceFile>jquery.cookie.js</jsSourceFile>
+							</jsSourceFiles>
+						</configuration>
+						<goals>
+							<goal>minify</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>default-minify-freefront</id>
+						<phase>process-resources</phase>
+						<configuration>
+							<charset>utf-8</charset>
+							<skipMerge>true</skipMerge>
+							<nosuffix>true</nosuffix>
+							<jsSourceDir>freefront/js/plugin</jsSourceDir>
+							<jsSourceFiles>
+								<jsSourceFile>captchas.js</jsSourceFile>
+								<jsSourceFile>slider.js</jsSourceFile>
+								<jsSourceFile>tipbox.js</jsSourceFile>
+							</jsSourceFiles>
+						</configuration>
+						<goals>
+							<goal>minify</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>minify-merge</id>
+						<phase>process-resources</phase>
+						<configuration>
+							<charset>utf-8</charset>
+							<nosuffix>true</nosuffix>
+							
+							<cssSourceDir>freefront/css</cssSourceDir>
+							<cssSourceFiles>
+								<cssSourceFile>index.css</cssSourceFile>
+								<!-- ... -->
+								<cssSourceFile>layout.css</cssSourceFile>
+								<cssSourceFile>plugin.css</cssSourceFile>
+								<cssSourceFile>reset.css</cssSourceFile>
+							</cssSourceFiles>
+							<cssFinalFile>public.css</cssFinalFile>
+							
+							<jsSourceDir>freefront/js</jsSourceDir>
+							<jsSourceFiles>
+								<jsSourceFile>element.js</jsSourceFile>
+								<jsSourceFile>function.js</jsSourceFile>
+								<jsSourceFile>initial.js</jsSourceFile>
+								<jsSourceFile>testbrowser.js</jsSourceFile>
+							</jsSourceFiles>
+							<jsFinalFile>compressed.js</jsFinalFile>
+							
+						</configuration>
+						<goals>
+							<goal>minify</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>minify-merge-pubonline</id>
+						<phase>process-resources</phase>
+						<configuration>
+							<charset>utf-8</charset>
+							<nosuffix>true</nosuffix>
+							<jsSourceDir>freefront/js</jsSourceDir>
+							<jsSourceFiles>
+								<jsSourceFile>public_online.js</jsSourceFile>
+							</jsSourceFiles>
+							<jsFinalFile>public.js</jsFinalFile>
+						</configuration>
+						<goals>
+							<goal>minify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>artifactory</id>
+			<name>qingya artifactory</name>
+			<url>http://maven.free4lab.com/artifactory/repo</url>
+		</repository>
+<!-- 		<repository>
+			<url>http://ftp.ing.umu.se/mirror/eclipse/rt/eclipselink/maven.repo/</url>
+			<id>eclipselink</id>
+			<layout>default</layout>
+			<name>Repository for library Library[eclipselink]</name>
+		</repository> -->
+	</repositories>
+
+
+	<distributionManagement>
+		<repository>
+			<id>localhost</id>
+			<name>localhost-releases</name>
+			<url>http://maven.free4lab.com/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>localhost</id>
+			<name>localhost-snapshots</name>
+			<url>http://maven.free4lab.com/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>

@@ -1,0 +1,46 @@
+﻿/*
+------------------------------- 
+Site:        公用类 包括头部、脚部。
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+body{background:#f3f3f3; }
+/*=======头部=======*/
+.head_box{width:100%; min-width:1020px; height:86px; background:#fff;box-shadow:2px 2px 3px #aaaaaa;}
+
+.head{width:1020px; margin:0 auto;}
+.head h1{width:270px; float:left;  line-height:80px; font-size:32px;}
+.head h1 img{margin:10px 0 0;float:left;}
+ .menu{ float:left;}
+ .menu ul{height:80px; }
+ .menu li{height:80px; margin:0 15px; padding:0 10px; float:left; overflow:hidden; display:inline; line-height:80px;}
+ .menu li a{font-size:18px; color:#333;}
+.menu li.on a,
+.menu li a:hover{color:#00c7e4;}
+
+.head_login{width:145px; margin-top:24px; margin-left:30px;float:right;}
+.head_login a{width:62px; height:35px; display:block; float:left; -moz-border-radius: 6px;  
+ -webkit-border-radius: 6px;  border-radius:6px; font-size:16px; color:#00c7e4; line-height:35px; text-align:center;}
+.head_login a.btn_login{background:#00c7e4; border:1px solid #00c7e4; color:#fff;}
+.head_login a.btn_register{margin-left:15px; border:1px solid #00c7e4;}
+/*=======头部end=======*/
+
+
+/*=======脚部=======*/
+.foot_box{width:100%; min-width:1020px; height:100px; overflow:hidden; }
+.foot{width:1020px; margin:0 auto 0; padding:30px 0 0; border-top:1px dashed #ccc; text-align:center; font-size:14px; color:#ccc; line-height:180%;}
+
+/*=======脚部 end=======*/
+
+
+/*=======右侧悬浮客服=======*/
+.customer_service{width:100px; height:140px; display:block; position:fixed; z-index:999; right:20px; bottom:100px;}
+/*=======右侧悬浮客服 end=======*/
+
+
+.box{width:100%; min-width:1020px; padding:35px 0;  overflow:hidden;}
+.bg_gray{background:#f9f9f9;}
+.none_line{border:none!important;}
+
+

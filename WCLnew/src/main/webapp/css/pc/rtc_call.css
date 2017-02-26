@@ -1,0 +1,182 @@
+/*
+------------------------------- 
+Site:        ����ģ��
+Author:      xuduo
+Updated:     2015-11-25
+-------------------------------
+*/
+
+/*=======�������� =======*/
+.call_input{width:320px; height:60px; margin:50px auto 0; background:#f4f5f6; border:1px solid #dfe9f0; -moz-border-radius: 4px;   -webkit-border-radius:4px;  border-radius:4px;}
+.call_input p{line-height:60px; text-align:center; font-size:14px; color:#ccc;}
+
+.call_input .call_input_num,
+.call_input .call_input_num2{width:240px; height:60px; float:left;border:none; background:none; line-height:60px; text-align:center; font-size:28px; font-family:Tahoma, Geneva, sans-serif;}/*--��������--*/
+.call_input .call_input_num2{margin-left:40px}
+.call_input .call_add_mail,
+.call_input .call_minus_num{width:30px; height:30px; margin:15px 0 0 10px; float:left; overflow:hidden; filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity:0.8;background:url(images/call_input_icon.png) no-repeat; line-height:80px; cursor:pointer;}
+.call_input .call_minus_num{margin:15px 10px 0 0; background-position:0 -30px;}
+.call_input .call_add_mail:hover,
+.call_input .call_minus_num:hover{filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity:1;}
+/*========�������� end =======*/
+
+
+/*=======���ּ� =======*/
+.call_num{width:334px; height:240px; margin:15px auto 0;}
+.call_num li{width:99px; height:50px;margin:0 5px 8px; float:left; background:#fff; border:1px solid #dfe9f0; box-shadow:0 2px 0 #f2f2f2; -moz-border-radius: 4px;   -webkit-border-radius:4px;  border-radius:4px; cursor:pointer; text-align:center; font-family:Tahoma, Geneva, sans-serif; font-size:28px; color:#4398cc; line-height:52px;}
+.call_num li:hover{background:#f3fbff; border:1px solid #bcd6e0;}
+
+
+/*========���ּ� end =======*/
+
+
+/*=======������ =======*/
+.call_operation{width:334px; height:60px; margin:5px auto 0;}
+.call_operation .call_btn{width:99px; height:52px; margin:0 5px;float:left; overflow:hidden;box-shadow:0 2px 0 #e0e0e0; -moz-border-radius: 4px;   -webkit-border-radius:4px;  border-radius:4px; cursor:pointer; background-color:#eef8fe; background-image:url(images/call_btn_icon.png); border:1px solid #79c1e9; background-repeat:no-repeat; line-height:150px; font-size:18px; color:#489fcf; text-align:center;}
+.call_operation .call_btn:hover{background-color:#def1fa;}
+.call_operation .call_btn_mail{background-position:center -55px;}/*---ͨѶ¼--*/
+.call_operation .call_btn_audio,
+.call_operation .call_btn_audio2,
+.call_operation .call_btn_video2{background-position:center -165px; background-color:#47ce78; border:1px solid #1bbd55;}/*---������Ƶ--*/
+.call_operation .call_btn_audio2{width:118px; background-position:center -165px;}/*---תΪ��Ƶ-��ɫ-*/
+.call_operation .call_btn_video{background-position:center 0;}/*---������Ƶ icon blue--*/
+.call_operation .call_btn_video2{width:118px; background-position:center -110px;}/*---תΪ��Ƶ ��--*/
+.call_operation .call_btn_audio:hover,
+.call_operation .call_btn_audio2:hover,
+.call_operation .call_btn_video2:hover,
+.call_operation .call_btn_recall:hover{background-color:#1bbd55; border:1px solid #0baa44;}
+.call_operation .call_btn_hang{width:90px; background-color:#ffe8e8; border:1px solid #db7575;background-position:center -220px;}/*---�ҵ��绰--*/
+.call_operation .call_btn_hang:hover{background-color:#f9d4d4}
+.call_operation .call_btn_key_open{width:90px;background-position:center -277px;}/*---�򿪼���--*/
+.call_operation .call_btn_key_close{width:90px;background-position:center -330px;}/*---�������--*/
+.call_operation .call_btn_cancel{width:160px; margin:0 auto; float:none; background-image:none; line-height:52px;}/*---ȡ�� ��ť��--*/
+.call_operation .call_btn_back{width:110px; background-image:none; line-height:52px;}/*---����--*/
+.call_operation .call_btn_recall{width:200px; background-image:none; background-color:#47ce78; border:1px solid #1bbd55;line-height:52px; color:#fff;}/*---�ز�--*/
+
+.call_operation .call_btn_non{filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity:0.6; cursor:auto;}
+
+.call_operation .call_btn_non:hover{background-color:#eef8fe;}
+/*========������ end =======*/
+
+
+/*=======��ʼ��ʾ =======*/
+.call_text_tips{width:360px; height:80px; margin:0 auto 0;}
+/*========��ʼ��ʾ end =======*/
+
+
+
+
+/*=======���ͨ����¼ =======*/
+.call_recent_calls{width:100%; height:168px; margin:30px auto 0; overflow:hidden; background:#f3f7f9; border-top:1px solid #d9e3e7;}
+.call_recent_calls .recent_calls_title{width:510px; height:18px; margin:20px auto; overflow:hidden;}
+.call_recent_calls .recent_calls_title h2{float:left; font-size:14px; color:#388ac4;}
+.call_recent_calls .recent_calls_title .more{float:right; font-size:14px; color:#999;}
+.call_recent_calls ul{width:540px; height:80px; margin:0 0 0 50px; overflow:hidden}
+.call_recent_calls ul li{width:160px; height:40px; margin:0 20px 10px 0; float:left; cursor:pointer;}
+.call_recent_calls .list_portrait{width:30px; height:30px; margin:0 10px 0 0; float:left; overflow:hidden;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;}
+.call_recent_calls .list_portrait img{width:30px; height:30px;}
+.call_recent_calls .li_text{width:120px; float:left; overflow:hidden;}
+.call_recent_calls .li_text h3,
+.call_recent_calls .li_text p{width:120px; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.call_recent_calls .li_text h3{font-size:14px; }
+.call_recent_calls .li_text p{font-size:12px; color:#999;line-height:180%;}
+
+.call_recent_calls ul li:hover h3{color:#388ac4;}
+/*========���ͨ����¼ end =======*/
+
+
+/*=======״̬:�����С�����ʧ�� =======*/
+.call_state{width:334px; height:255px; margin:100px auto 20px;}
+.call_state .state_img{width:118px; height:118px;margin:0 auto 40px; overflow:hidden;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;}
+ .call_state .state_img img{width:118px; height:118px;}
+.call_state p,
+.call_video p{width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis; text-align:center; font-size:14px; color:#999;}
+.call_state .title{font-size:28px; line-height:200%; color:#333;}
+
+/*=======״̬:�����С�����ʧ�� end =======*/
+
+
+/*=======��Ƶ�� =======*/
+.call_video{width:410px; position:relative; height:240px; margin:40px auto 20px;}
+.call_video .remote{width:365px; position:relative; height:260px; z-index:3;}
+.call_video .local{width:130px; position:absolute; height:130px; right:9px; bottom:-20px; z-index:4;}
+.call_video .title{margin-top:10px;font-size:28px; line-height:130%; color:#333;}
+.call_video .video_img{width:410px; height:260px;}
+/*=======��Ƶ��end=======*/
+
+
+/*======�������� ̬:�����С�����ʧ�� =======*/
+.chat_voice_right .call_state{width:130px; height:auto; margin:70px auto 30px;}
+.chat_voice_right .call_state .state_img{width:90px; height:90px; margin:0 auto 10px;}
+.chat_voice_right .call_state .state_img img{width:90px; height:90px;}
+.chat_voice_right .call_state p{font-size:12px;}
+.chat_voice_right .call_state .title{font-size:20px; line-height:180%;}
+
+.chat_voice_right .call_operation{width:130px;}
+.chat_voice_right .call_operation .call_btn{margin:0 auto 20px; float:none;}/*---��ť--*/
+.chat_voice_right .call_operation .call_btn_cancel{width:80px; height:30px; font-size:14px; line-height:30px;}/*---ȡ��ť ��ɫ--*/
+.chat_voice_right .call_operation .call_btn_recall{width:80px; height:30px; font-size:14px; line-height:30px;}/*---�ز���ť ��ɫ--*/
+.chat_voice_right .call_operation .call_btn_hang{width:80px; height:30px;  background-image:url(images/call_btn_icon2.png); background-position:center;}/*---�Ҷϰ�ť--*/
+
+.chat_voice_right .call_video{width:140px; height:auto; margin:20px auto;}/*---��Ƶ��--*/
+.chat_voice_right .call_video .video_img{width:140px; height:90px; margin:10px 0;}
+.chat_voice_right .call_video .video_img img{width:140px; height:90px;}
+.chat_voice_right .call_video p{font-size:12px;}
+.chat_voice_right .call_video .title{font-size:20px; line-height:180%;}
+
+
+/*======�������� ̬:�����С�����ʧ��end =======*/
+
+
+/*======չ�����м����� =======*/
+.chat_voice_box{width:570px; height:410px; margin-right:18px;overflow:hidden; float:right;}
+.chat_voice_box .call_state{height:240px; margin:35px auto 0;}
+.chat_voice_box .call_state .state_img{margin:0 auto 20px;}
+
+.chat_voice_box .call_operation .call_btn{width:120px; margin:0 auto;float:none;}/*---��ť--*/
+.chat_voice_box .call_operation .btn_l1{ margin:0 15px 0 40px;float:left;}/*---ʹb1041����ز���ť��ȡ��ťһ������,ˮƽ����ҳ���м�--*/
+.chat_voice_box .call_operation .btn_l2{margin:0; float:left;}
+
+.chat_voice_box .call_video{height:260px; margin:30px auto 20px;}/*---��Ƶ��--*/
+
+/*======չ�����м����� end =======*/
+
+
+/*======����С������������Ƶ =======*/
+.pop_chat_voice{width:365px; height:290px; margin:10px; padding:4px 0; display:block; overflow:hidden; position:relative; background:#fff;  border-radius:4px; box-shadow:2px 2px 30px #d2d6d7;}
+.pop_chat_voice .close_pop{width:18px; height:18px; overflow:hidden; display:block; position:absolute; right:10px; top:10px; background:url(images/close_pop.png) no-repeat; line-height:50px; cursor:pointer;}
+
+.title_div{width:315px;height:30px;}
+
+.pop_chat_voice .call_state{width:130px; height:auto; margin:-7px auto 25px;}
+.pop_chat_voice .call_state .state_img{width:90px; height:90px; margin:0 auto 10px;}
+.pop_chat_voice .call_state .state_img img{width:90px; height:90px;}
+.pop_chat_voice .call_state p{font-size:12px;}
+.pop_chat_voice .call_state .title{font-size:20px; line-height:180%;}
+
+.pop_chat_voice .call_operation{width:200px;}
+.pop_chat_voice .call_operation2{width:365px;}
+.pop_chat_voice .call_operation .call_btn{margin:0 auto 20px; }/*---��ť--*/
+.pop_chat_voice .call_operation .call_btn_cancel{width:80px; height:30px; font-size:14px; line-height:30px;}/*---ȡ��ť ��ɫ--*/
+.pop_chat_voice .call_operation .call_btn_recall{width:80px; height:30px; font-size:14px; line-height:30px;}/*---�ز���ť ��ɫ--*/
+.pop_chat_voice .call_operation .call_btn_hang{width:80px; height:30px; margin:0 auto; float:none; background-image:url(images/call_btn_icon2.png); background-position:center;}/*---�Ҷϰ�ť--*/
+
+.pop_chat_voice .call_video{width:365px; height:240; margin:-5px 0 0;border-radius:4px 40x 0 0; }/*---��Ƶ��--*/
+.pop_chat_voice .call_video .video_img{width:365px; height:230px; }
+.pop_chat_voice .call_video .video_img img{width:365px; height:230px;}
+.pop_chat_voice .call_video p{padding-left:15px; font-size:12px; text-align:left;}
+.pop_chat_voice .call_video .title{margin-top:2px; padding-left:15px; font-size:20px; line-height:200%; text-align:left;}
+.pop_chat_voice .pop_btn{margin:10px 10px 0 0!important;float:right!important;}
+/*======����С������������Ƶ end =======*/
+

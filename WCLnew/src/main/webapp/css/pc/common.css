@@ -1,0 +1,248 @@
+
+.Send-MessageName{
+    color:#0000FF;
+    text-align:right; 
+    /*float:right;*/
+}
+.Send-MessageContent{
+    clear:both;
+    text-align:right; 
+    word-wrap: break-word;
+}
+.Receive-MessageName{
+    color:#008000;
+    text-align:left; 
+}
+.Receive-MessageContent{
+    clear:both;
+    text-align:left; 
+    word-wrap: break-word;
+}
+.remoteposition video{
+
+    border:2px sold #999999;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+
+
+}
+.localposition video{
+    width: 20%;
+	position: absolute;
+	z-index: 100;
+	bottom: 68px;
+    border:2px sold #999999;    
+
+}
+
+.ul_margin_left{
+	margin-left:-40px;
+}
+
+.list_margin_left{
+	margin-left:15px;
+}
+
+.accordion-heading .accordion-toggle{
+	display: block;
+	/*padding: 8px 15px;*/
+	border:3px;
+}
+a:focus{
+	outline:none;
+}
+.chat03_content_ul {
+    text-align: left;
+    font-size: 12px;
+    color: #333;
+    margin: 0px;
+    overflow-y: auto;
+    position: relative;
+    resize: none;
+    padding: 5px 0px 2px;
+}
+.modal_content_width{
+	width:90%
+}
+.modal_header{
+	padding:1px 10px;
+}
+.modal_header .modal_header_close{
+	margin-top: 15px;
+}
+.modal_header_h{
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.modal_body{
+	padding:20px;
+}
+.modal_footer{
+	padding:12px;
+}
+.modal_input{
+	border-radius: 4px;
+padding: 5px;
+width: 50%;
+}
+.li_style {
+	/*background-color: rgb(51, 204, 255);*/
+	background-color: rgba(129, 138, 141, 0.15);
+	list-style-type:none;
+	margin-bottom: 6px;
+	width:88%
+}
+
+.accordion-group{
+	margin-bottom: 2px;
+border: 1px solid #E5E5E5;
+border-radius: 4px;
+	
+}
+.accordion-inner {
+    padding: 5px 18px 0px;
+    border-top: 1px solid #E5E5E5;
+  /* height: 328px;*/
+   /* overflow: auto;*/
+}
+.contactgroup_style{
+	
+	color: rgb(85, 85, 85);
+}
+/*.accordion-group a:hover ,a:link{
+	color:#555;
+}*/
+.accordion-heading{
+	display:block;
+	width:88%;
+	height:40px;
+	font-size:16px;
+}
+.group_right_button{
+	float: right;
+	display: inline-block;
+	margin-top: -30px;
+	margin-right: -16px;
+	border: medium none;
+	padding: 8px 13px 7px;
+	font-size: 16px;
+	
+}
+.btn_default_glyphicon{
+	padding: 10px 11px 7px;
+	font-size: 16px;
+	
+}
+.btn_right{
+	display:inline-block;
+	float:right;
+	bottom: 28px;
+	left: 14px;
+}
+.left_item{
+	    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.tr_style{
+	margin-top:20px;
+}
+.mod_input{
+	border-radius: 4px;
+    padding: 5px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+.redletter{
+	color:red;
+	margin-left: 10px;
+}
+.left_item_label{
+	 font-size: 16px;
+    margin-right: 10px;
+    margin-top: 13px;
+}
+.left_item_td{
+	font-size: 16px;
+	margin-right: 10px;
+	margin-top: 13px;
+	/*padding: 8px 10px 15px;*/
+	font-weight: 700;
+}
+.right_item_td{
+	font-size: 16px;
+	margin-right: 10px;
+	/*padding: 8px 10px 15px;*/
+}
+.mod_left_item{
+	    font-size: 16px;
+    /*	margin-right: 10px;*/
+}
+.mod_right_item_td{
+	/*    font-size: 16px;*/
+	  /*  margin-right: 10px;*/
+}
+.mod_right_input{
+	    border-radius: 4px;
+  /*  padding: 5px; */
+      width: 300px;
+}
+.creategroup_input_margin{
+	margin:5px;
+}
+.group_margin{
+	    padding: 5px 14px;
+}
+#list_friend_UL .right-item{
+	height:28px;
+	width:88%;
+	padding:14px 16px 8px 15px;
+	font-size:16px;
+}
+#list_group_UL .right-item{
+	height:28px;
+	width:89%;
+	padding:9px 12px 18px 16px;
+	font-size:16px;
+}
+.btn-action{
+	margin-right:9px;
+}
+.right-button-margin
+{
+	margin:16px 5px -12px 5px
+}
+.word_wrap{
+	word-wrap: break-word;
+}
+.fileShow{	margin:10px; 	font-size:15px;
+}
+/*文件传输进度条 add by pq*/
+.progressbar{background-color:#eee; height:5px; width:340px; margin:5px 0px; position:relative;}
+.progressbar .bar{background-color:rgba(0,160,230,0.6); height:5px; position:absolute; left:0px; top:0px; z-index:10;}
+
+.fsize14{font-size:14px;}
+.DN{display:none;}
+
+ /*--------右侧 搜索好友列表 -------*/
+.friend_list_box_search{width:280px; height:443px; padding-top:10px; overflow:auto;} 
+.friend_h2{width:100%; height:30px; position:relative; text-indent:30px; font-size:14px; font-weight:100; line-height:30px; cursor:pointer;}/*----�������---*/
+.friend_h2 i{width:14px; height:14px; position:absolute; top:8px; left:12px; background-image:url(images/rtc_right_arrow.png);}
+.friend_h2 i.ul_open{background-position:0 -14px;}
+.friend_h2 .num{margin-left:5px;font-size:12px; color:#999;}
+
+.friend_list_search ul{} /*----好友列表---*/
+.friend_list_search li{width:100%; height:60px; cursor:pointer;}
+.friend_list_search .list_portrait{width:38px; height:38px; margin:10px 10px 0 30px; float:left; overflow:hidden;-moz-border-radius: 50%;  
+ -webkit-border-radius: 50%;  border-radius:50%;}
+ .friend_list_search .list_portrait img{width:38px; height:38px;}
+ .friend_list_search .friend_name{width:165px; height:55px; display:block; float:left;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;line-height:58px; color:#333; font-size:16px;}
+   .friend_list_search .friend_name i{margin-left:5px;font-size:12px; color:#999; font-style:normal;}
+ .friend_list_search li:hover{background:#ddd;}
+ /*--------右侧 好友列表 end -------*/
+
+
+
+
+
