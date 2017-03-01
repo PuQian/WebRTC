@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="AccountPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <properties>
+      
+      <property name="hibernate.show_sql" value="false" />
+      <property name="hibernate.connection.username" value="root"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <property name="hibernate.connection.password" value="123456"/> 
+  	  <property name="hibernate.connection.url" value="jdbc:mysql://10.109.247.137:3306/wms?characterEncoding=utf-8"/> 
+<!-- 	<property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/wms?characterEncoding=utf-8"/>  -->  
+
+    <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+
+      <!-- 使用 c3p0 连接池 -->
+      <property name="connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider" />
+      <!--当连接池中的连接耗尽的时候c3p0一次同时获取的连接数 -->
+      <property name="hibernate.c3p0.acquire_increment" value="1" />
+      <!--检查所有连接池中的空闲连接时间间隔 -->
+      <property name="hibernate.c3p0.idle_test_period" value="3000" />
+      <!--连接池中保留的最大连接数 -->
+      <property name="hibernate.c3p0.max_size" value="10" />
+      <!--JDBC的标准参数，用以控制数据源内加载的PreparedStatements数量。
+      但由于预缓存的statements属于单个connection而不是整个连接池。
+      所以设置这个参数需要考虑到多方面的因素。
+      如果maxStatements与maxStatementsPerConnection均为0，则缓存被关闭。Default: 0-->
+      <property name="hibernate.c3p0.max_statements" value="0" />
+      <property name="hibernate.c3p0.max_statements_per_connection" value="0"/>
+      <!--连接池中保留的最小连接数 -->
+      <property name="hibernate.c3p0.min_size" value="1" />
+      <!--最大空闲时间,期内未使用则连接被丢弃。若为0则永不丢弃。
+      自动检测空闲时间,MySQL默认的timeout时间为8小时 -->
+      <property name="hibernate.c3p0.timeout" value="3600" />
+      <property name="hibernate.c3p0.preferredTestQuery" value="select 1;" />
+    </properties>
+  </persistence-unit>
+</persistence>

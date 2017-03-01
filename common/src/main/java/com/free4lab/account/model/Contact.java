@@ -1,0 +1,237 @@
+package com.free4lab.account.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+/**
+ * Contact entity. @author MyEclipse Persistence Tools
+ */
+@Entity
+@Table(name="contacts")
+public class Contact implements java.io.Serializable {
+
+
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	/**
+	 * 
+	 */
+
+	@Id @GeneratedValue(strategy=IDENTITY)  
+	@Column(name="id", unique=true, nullable=false)
+	private Integer id;
+	@Column(name="LNAME", nullable=true, length=30)
+	private String lname;
+	@Column(name="FNAME", nullable=true, length=30)
+	private String fname;
+	@Column(name="SEX",  nullable=true,length=30)
+	private String sex;
+	@Column(name="NC", nullable=true, length=30)	
+	private String nc;
+	@Column(name="BIRTH", nullable=true, length=30)
+	private String birth;
+	@Column(name="ZW", nullable=true, length=30)
+	private String zw;
+	@Column(name="BM", nullable=true, length=30)
+	private String bm;
+	@Column(name="TELP", nullable=true, length=30)
+	private String telp;
+	@Column(name="MOBP", nullable=true, length=30)
+	private String mobp;
+	@Column(name="EMAILS", nullable=true, length=30)
+	private String emails;
+	@Column(name="ADDRESS", nullable=true, length=30)
+	private String address;
+	@Column(name="POSTCODE",  nullable=true)
+	private String postcode;
+	@Column(name="group_id", nullable=true)
+	private Integer groupId;
+	@Column(name="BZ", nullable=true, length=30)
+	private String bz;
+
+
+    // Constructors
+
+    /** default constructor */
+    public Contact() {
+    }
+
+    
+    /** full constructor */
+    public Contact(String lname, String fname, String sex, String nc, 
+    		String birth, String zw, String bm, String telp, String mobp, String emails, 
+    		String address,  String postcode, int groupId, String bz) {
+    
+    	this.lname = lname;
+    	this.fname = fname;
+    	this.sex = sex;
+    	this.nc = nc;
+    	this.birth = birth;
+    	this.zw = zw;
+    	this.bm = bm;
+    	this.telp = telp;
+    	this.mobp = mobp;
+    	this.emails = emails;
+    	this.address = address;
+    	this.postcode = postcode;
+    	this.groupId = groupId;
+    	this.bz = bz;
+    }
+
+
+	public Integer getId() {
+		return id;
+	}
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
+	public String getLname() {
+		return lname;
+	}
+
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
+
+	public String getFname() {
+		return fname;
+	}
+
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+
+	public String getSex() {
+		return sex;
+	}
+
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+
+	public String getNc() {
+		return nc;
+	}
+
+
+	public void setNc(String nc) {
+		this.nc = nc;
+	}
+
+
+	public String getBirth() {
+		return birth;
+	}
+
+
+	public void setBirth(String birth) {
+		this.birth = birth;
+	}
+
+
+	public String getZw() {
+		return zw;
+	}
+
+
+	public void setZw(String zw) {
+		this.zw = zw;
+	}
+
+
+	public String getBm() {
+		return bm;
+	}
+
+
+	public void setBm(String bm) {
+		this.bm = bm;
+	}
+
+
+	public String getTelp() {
+		return telp;
+	}
+
+
+	public void setTelp(String telp) {
+		this.telp = telp;
+	}
+
+
+	public String getMobp() {
+		return mobp;
+	}
+
+
+	public void setMobp(String mobp) {
+		this.mobp = mobp;
+	}
+
+
+	public String getEmails() {
+		return emails;
+	}
+
+
+	public void setEmails(String emails) {
+		this.emails = emails;
+	}
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+	public String getPostcode() {
+		return postcode;
+	}
+
+
+	public void setPostcode(String postcode) {
+		this.postcode = postcode;
+	}
+
+	public String getBz() {
+		return bz;
+	}
+
+
+	public void setBz(String bz) {
+		this.bz = bz;
+	}
+
+
+	public Integer getGroupId() {
+		return groupId;
+	}
+
+
+	public void setGroupId(Integer groupId) {
+		this.groupId = groupId;
+	}
+
+}
